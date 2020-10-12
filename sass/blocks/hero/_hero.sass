@@ -17,6 +17,12 @@
     content: ''
     border-radius: inherit
     background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%)
+  &__wrapper
+    position: absolute
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    z-index: 3
   &__image
     position: absolute
     top: -357px
@@ -26,10 +32,6 @@
     border-radius: inherit
     object-fit: cover
     z-index: 1
-  &__wrapper
-    display: flex
-    flex-direction: column
-    align-items: flex-start
   &__tag
     padding: 6px 16px
     width: 175px
@@ -40,12 +42,14 @@
     font-size: 14px
     line-height: 20px
     text-align: center
+    text-decoration: none
+    text-transform: uppercase
     background: rgba(54, 179, 126, 0.1)
     border-radius: 2000px
     color: #36B37E
   &__title
     margin: 0
-    max-width: 425px
+    max-width: 460px
     font-family: Open Sans, sans-serif
     font-style: normal
     font-weight: bold
@@ -95,7 +99,8 @@
   &__item + &__item
     margin-left: 31px
   &__icon-wrapper
-    min-width: 36px
+    width: 36px
+    height: 36px
   &__link
     margin-top: 8px
     font-family: Open Sans, sans-serif
