@@ -4,11 +4,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css">
   <title>Ehya Market</title>
 </head>
 
 <body>
+  <!-- Header -->
+  <header class="navbar-menu">
+    <div class="container">
+      <ul class="navnar-menu__list">
+        <!-- Logo -->
+        <li class="navbar-menu__item">
+          <a href="#" class="navbar-menu__logo logo">
+            <img
+              src="sass/blocks/header/img/logo.svg"
+              alt="Image of logo"
+              class="navbar-menu__logo-image" />
+          </a>
+        </li>
+        <!-- Navigation -->
+        <li class="navbar-menu__item">
+          <a href="#" class="navbar-menu__link">Главная</a>
+        </li>
+        <li class="navbar-menu__item">
+          <a href="#" class="navbar-menu__link">Новинки</a>
+        </li>
+        <li class="navbar-menu__item">
+          <a href="#" class="navbar-menu__link">Тренды</a>
+        </li>
+        <li class="navbar-menu__item">
+          <a href="#" class="navbar-menu__link">Отзывы</a>
+        </li>
+        <li class="navbar-menu__item">
+          <a href="#" class="navbar-menu__link">Контакты</a>
+        </li>
+        <!-- Login button -->
+        <li class="navbar-menu__item">
+          <button class="navbar-menu__button button">Войти</button>
+        </li>
+      </ul>
+      <!-- /.navnar-menu__list -->
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- /.navbar-menu-->
 
+  <!-- Main section -->
+  <section class="hero">
+    <div class="hero__wrapper">
+      <div class="hero__tag"># READY TO BE COOL</div>
+      <h1 class="hero__title">Каждый может быть крутым и модным</h1>
+      <p class="hero__description">
+        Чтобы быть в тренде и стать модным,
+        вам нужно носить отличную одежду и обновлять свой стиль.
+        Всё это вы можете найти здесь. Начните сейчас.
+      </p>
+      <button class="hero__button button">Подобрать одежду</button>
+      <ul class="hero__list">
+        <li class="hero__item">Онлайн оплата</li>
+        <li class="hero__item">Гарантия</li>
+        <li class="hero__item">Качество</li>
+      </ul>
+    </div>
+    <!-- /.hero__wrapper -->
+  </section>
+  <!-- /.hero -->
 </body>
 
+<!-- Scripts -->
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/main.js"></script>
 </html>
