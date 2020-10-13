@@ -1,0 +1,60 @@
+@media ( max-width: 1200px )
+  .container
+    max-width: 960px
+
+@media ( max-width: 992px )
+  .container
+    max-width: 768px
+
+@media ( max-width: 768px )
+  .container
+    max-width: 576px
+  .navbar-menu
+    &__list--mobile-hidden, &__button--mobile-hidden
+      display: none
+    &__mobile-button
+      display: flex
+      padding: 0
+      width: 22px
+      height: 13.3px
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      border: none
+      cursor: pointer
+      background-color: $light
+    &__mobile-button-line
+      width: 22px
+      height: 2.2px
+      background-color: #3A4C66
+  .hero
+    margin-top: 30px
+    padding: 36px 0 36px 28px
+    max-width: 728px
+    min-height: 624px
+    background-position: 63.3% 47.53%
+    &:before
+      left: 0%
+      right: -47.53%
+      top: -63.3%
+      bottom: -95.35%
+    &__title
+      max-width: 365px
+      font-size: 48px
+      line-height: 60px
+    &__description
+      max-width: 400px
+      font-size: 18px
+      line-height: 32px
+    &__list
+      max-width: 444px
+    &__item + &__item
+      margin-left: 21px
+
+@media ( max-width: 576px )
+  .container
+    max-width: 90%
+
+@media ( min-width: 320px)  and ( max-width: 480px )
+  .container
+    max-width: 90%

@@ -27,7 +27,7 @@
             class="navbar-menu__logo-image" />
         </a>
         <!-- Navigation -->
-        <ul class="navbar-menu__list">
+        <ul class="navbar-menu__list navbar-menu__list--mobile-hidden">
           <li class="navbar-menu__item">
             <a href="#" class="navbar-menu__link">Главная</a>
           </li>
@@ -46,7 +46,13 @@
           <!-- /.navbar-menu__list -->
         </ul>
         <!-- Login button -->
-        <button class="navbar-menu__button button">Войти</button>
+        <button class="navbar-menu__button button navbar-menu__button--mobile-hidden">Войти</button>
+        <!-- Button for media-request 768px -->
+        <button class="navbar-menu__mobile-button mobile-button">
+          <span class="navbar-menu__mobile-button-line"></span>
+          <span class="navbar-menu__mobile-button-line"></span>
+          <span class="navbar-menu__mobile-button-line"></span>
+        </button>
       </div>
       <!-- /.navnar-menu__wrapper -->
     </div>
@@ -95,7 +101,7 @@
         </li>
       </ul>
     </div>
-    <img src="sass/blocks/hero/img/hero.png" alt="Image of woman" class="hero__image">
+    <!-- <img src="sass/blocks/hero/img/hero.png" alt="Image of woman" class="hero__image"> -->
     <!-- /.hero__text-wrapper -->
   </section>
   <!-- /.hero -->
