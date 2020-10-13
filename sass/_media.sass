@@ -12,6 +12,8 @@
   .navbar-menu
     &__list--mobile-hidden, &__button--mobile-hidden
       display: none
+    &__logo
+      margin-right: auto
     &__mobile-button
       display: flex
       padding: 0
@@ -33,6 +35,7 @@
     max-width: 728px
     min-height: 624px
     background-position: 63.3% 47.53%
+    background-size: auto auto
     &__title
       max-width: 365px
       font-size: 48px
@@ -71,4 +74,83 @@
 
 @media ( min-width: 320px)  and ( max-width: 480px )
   .container
-    max-width: 90%
+    max-width: 290px
+    width: 90%
+  .navbar-menu
+    &__logo
+      margin-right: auto
+  .hero
+    margin-top: 24px
+    padding: 381px 20px 36px 28px
+    max-width: 320px
+    min-height: 899px
+    background-position: 80% 20%
+    background-size: auto auto
+    &__wrapper
+      align-items: center
+      text-align: center
+    &__title
+      max-width: 244px
+      font-size: 32px
+      line-height: 40px
+    &__description
+      max-width: 280px
+      font-size: 16px
+      line-height: 28px
+    &__tag + &__title
+      margin-top: 20px
+    &__title + &__description
+      margin-top: 20px
+      text-align: center
+    &__button
+      margin-top: 24px
+      padding: 13px 49px
+      width: 100%
+      min-height: 48px
+      font-size: 16px
+      line-height: 22px
+    &__list
+      width: 100%
+    &__link
+      margin-top: 2px
+      font-size: 16px
+      line-height: 20px
+    &__item + &__item
+      margin-left: 16px
+    &__icon-wrapper
+      width: 24px
+      height: 24px
+  .collection
+    margin-top: 64px
+    &__woman
+      margin-right: 0
+      width: 290px
+      height: 300px
+    &__images-wrapper
+      flex-direction: row
+      margin-top: 14px
+    &__kitchen
+      flex-basis: 49%
+      width: 137px
+      height: 97px
+    &__room
+      flex-basis: 49%
+      width: 137px
+      height: 97px
+    &__kitchen + &__room
+      margin-top: 0
+      margin-left: 14px
+    &__text
+      text-align: center
+    &__title
+      margin-top: 36px
+      max-width: 100%
+      font-size: 28px
+      line-height: 36px
+    &__description
+      margin-top: 20px
+      max-width: 280px
+      font-size: 16px
+      line-height: 28px
+    &__link-wrapper
+      display: none
