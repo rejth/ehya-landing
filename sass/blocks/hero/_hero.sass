@@ -1,28 +1,28 @@
 .hero
   position: relative
   margin: auto
+  margin-top: 36px
   padding: 62px 0 46px 107px
   width: 1280px
   min-height: 700px
   border-radius: 8px
   overflow: hidden
+  z-index: 1
   background: #E8EAE9
-  &::before
+  &:before
     position: absolute
     left: 27.97%
     right: -11.88%
     top: -53.86%
     bottom: -76.71%
-    z-index: 2
     content: ''
+    z-index: -1
     border-radius: inherit
     background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%)
   &__wrapper
-    position: absolute
     display: flex
     flex-direction: column
     align-items: flex-start
-    z-index: 3
   &__image
     position: absolute
     top: -357px
@@ -31,7 +31,7 @@
     right: 0
     border-radius: inherit
     object-fit: cover
-    z-index: 1
+    z-index: -2
   &__tag
     padding: 6px 16px
     width: 175px
