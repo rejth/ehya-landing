@@ -8,7 +8,7 @@
 
 @media ( max-width: 768px )
   .container
-    max-width: 576px
+    max-width: 672px
   .navbar-menu
     &__list--mobile-hidden, &__button--mobile-hidden
       display: none
@@ -33,11 +33,6 @@
     max-width: 728px
     min-height: 624px
     background-position: 63.3% 47.53%
-    &:before
-      left: 0%
-      right: -47.53%
-      top: -63.3%
-      bottom: -95.35%
     &__title
       max-width: 365px
       font-size: 48px
@@ -50,6 +45,25 @@
       max-width: 444px
     &__item + &__item
       margin-left: 21px
+  .collection
+    margin-top: 80px
+    &__wrapper
+      flex-wrap: wrap
+    &__woman
+      width: 322px
+      height: 490px
+    &__images-wrapper
+      margin-right: 0
+    &__text
+      flex-basis: 100%
+    &__title
+      margin-top: 40px
+      max-width: 100%
+    &__description
+      max-width: 95%
+    &__link-wrapper
+      margin-top: 24px
+      margin-bottom: 0
 
 @media ( max-width: 576px )
   .container
