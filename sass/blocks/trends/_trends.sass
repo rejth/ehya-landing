@@ -36,21 +36,19 @@
     align-items: center
     justify-content: space-between
 
-// Card block
+// Card
 .card
   margin-top: 31px
   width: 260px
   height: 441px
   overflow: hidden
-  &__image-wrapper
+  &__image
     width: 100%
     height: 350px
     border-radius: 8px
-  &__image
-    width: 100%
-    height: 100%
-    border-radius: inherit
-    object-fit: cover
+    overflow: hidden
+    background-repeat: no-repeat
+    background-position: center
   &__title
     margin-top: 20px
     margin-left: 10px
@@ -75,7 +73,35 @@
   &__shopping-cart
     margin-right: 10px
 
-// See more collections button
+// Card Images - from left to right
+.image-1
+  background-size: cover
+.image-2
+  background-size: auto 220%
+  background-position-x: 45%
+  background-position-y: 10%
+.image-3
+  background-size: auto 160%
+  background-position-x: 45%
+  background-position-y: 20%
+.image-4
+  background-size: auto 150%
+  background-position-x: 45%
+  background-position-y: 65%
+.image-5
+  background-size: auto 130%
+  background-position-x: 45%
+  background-position-y: 25%
+.image-6
+  background-size: auto 250%
+  background-position-x: 45%
+  background-position-y: 8%
+.image-7
+  background-size: auto 200%
+  background-position-x: 50%
+  background-position-y: 1%
+
+// See more collections card
 .see-more
   position: relative
   display: flex
