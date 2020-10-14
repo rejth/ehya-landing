@@ -1,0 +1,107 @@
+.trends
+  margin-top: 145px
+  &__menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__title
+    font-family: "HK Grotesk Bold", sans-serif
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.2px
+    color: $primary-text-color
+  &__tabs
+    margin: 0
+    margin-top: 17.5px
+    padding: 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    list-style-type: none
+  &__tabs-item
+    font-family: Open Sans, sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    text-decoration: none
+    cursor: pointer
+    color: $primary-text-color
+  &__tabs-item + &__tabs-item
+    margin-left: 38px
+  &__cards-wrapper
+    margin-top: 17px
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+
+// Card block
+.card
+  margin-top: 31px
+  width: 260px
+  height: 441px
+  overflow: hidden
+  &__image-wrapper
+    width: 100%
+    height: 350px
+    border-radius: 8px
+  &__image
+    width: 100%
+    height: 100%
+    border-radius: inherit
+    object-fit: cover
+  &__title
+    margin-top: 20px
+    margin-left: 10px
+    font-family: "HK Grotesk Bold", sans-serif
+    font-size: 24px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: $primary-text-color
+  &__price
+    margin-top: 3px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__price-tag
+    margin-left: 10px
+    font-family: Open Sans, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: $secondary-text-color
+  &__shopping-cart
+    margin-right: 10px
+
+// See more collections button
+.see-more
+  position: relative
+  display: flex
+  align-items: center
+  &__container
+    position: absolute
+    display: flex
+    align-items: center
+    height: 350px
+    top: 0
+    left: 0
+    right: 0
+    border-radius: 8px
+    background-color: #1565D8
+  &__link
+    align-self: center
+    text-decoration: none
+  &__content-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__text
+    margin-top: 25px
+    font-family: "HK Grotesk Bold", sans-serif
+    font-size: 24px
+    line-height: 32px
+    text-align: center
+    letter-spacing: 0.2px
+    color: $light
