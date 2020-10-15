@@ -55,9 +55,9 @@
 .story
   display: flex
   justify-content: space-between
-  &__left, &__right
+  &__story-item
     cursor: pointer
-  &__left + &__right
+  &__story-item + &__story-item
     margin-left: 28px
   &__image
     width: 312px
@@ -71,6 +71,7 @@
   &__text
     max-width: 312px
     padding: 20px
+    background: #FAFDFF
   &__title
     margin-bottom: 12px
     max-width: 260px
