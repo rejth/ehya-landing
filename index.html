@@ -167,10 +167,10 @@
       <div class="trends__menu">
         <h2 class="trends__title">Тренды</h2>
         <!-- Tabs -->
-        <ul class="trends__tabs tabs">
-          <li data-target="new-items" class="trends__tabs-item tabs__item--active">Новинки</li>
-          <li data-target="best" class="trends__tabs-item tabs__item--active">Лучшее</li>
-          <li data-target="soon" class="trends__tabs-item tabs__item--active">Скоро</li>
+        <ul class="trends__tabs">
+          <li data-target="#new-items" class="trends__tabs-item trends__tabs-item--active">Новинки</li>
+          <li data-target="#best" class="trends__tabs-item">Лучшее</li>
+          <li data-target="#soon" class="trends__tabs-item">Скоро</li>
         </ul>
       </div>
       <!-- /.trends__menu -->
@@ -291,49 +291,7 @@
       <!-- /.trends__cards-wrapper -->
 
       <!-- Best Items Tab -->
-      <div id="best" class="trends__cards-wrapper trends__cards-wrapper--active">
-        <div class="card">
-          <div style="background-image:url(../sass/blocks/trends/img/card-1.png)" class="card__image image-1">
-          </div>
-          <h3 class="card__title">Minimalist Style</h3>
-          <div class="card__price">
-            <span class="card__price-tag">$25.7</span>
-            <a href="#" class="card__shopping-cart">
-              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
-              class="card__shopping-cart-image">
-            </a>
-          </div>
-           <!-- /.card__price-->
-        </div>
-        <!-- /.card-->
-        <div class="card">
-          <div style="background-image:url(../sass/blocks/trends/img/card-2.png)" class="card__image image-2">
-          </div>
-          <h3 class="card__title">Luxury Gown</h3>
-          <div class="card__price">
-            <span class="card__price-tag">$30.6</span>
-            <a href="#" class="card__shopping-cart">
-              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
-              class="card__shopping-cart-image">
-            </a>
-          </div>
-           <!-- /.card__price-->
-        </div>
-        <!-- /.card-->
-        <div class="card">
-          <div style="background-image:url(../sass/blocks/trends/img/card-3.png)" class="card__image image-3">
-          </div>
-          <h3 class="card__title">Full Coloristy</h3>
-          <div class="card__price">
-            <span class="card__price-tag">$25.7</span>
-            <a href="#" class="card__shopping-cart">
-              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
-              class="card__shopping-cart-image">
-            </a>
-          </div>
-           <!-- /.card__price-->
-        </div>
-        <!-- /.card-->
+      <div id="best" class="trends__cards-wrapper">
         <div class="card">
           <div style="background-image:url(../sass/blocks/trends/img/card-4.png)" class="card__image image-4">
           </div>
@@ -368,6 +326,48 @@
           <h3 class="card__title">Swaggie Shaggy</h3>
           <div class="card__price">
             <span class="card__price-tag">$81.3</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(../sass/blocks/trends/img/card-1.png)" class="card__image image-1">
+          </div>
+          <h3 class="card__title">Minimalist Style</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$25.7</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+          <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(../sass/blocks/trends/img/card-2.png)" class="card__image image-2">
+          </div>
+          <h3 class="card__title">Luxury Gown</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$30.6</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(../sass/blocks/trends/img/card-3.png)" class="card__image image-3">
+          </div>
+          <h3 class="card__title">Full Coloristy</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$25.7</span>
             <a href="#" class="card__shopping-cart">
               <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
               class="card__shopping-cart-image">
@@ -406,21 +406,7 @@
       <!-- /.trends__cards-wrapper -->
 
       <!-- Soon Items Tab -->
-      <div id="soon" class="trends__cards-wrapper trends__cards-wrapper--active">
-        <div class="card">
-          <div style="background-image:url(../sass/blocks/trends/img/card-1.png)" class="card__image image-1">
-          </div>
-          <h3 class="card__title">Minimalist Style</h3>
-          <div class="card__price">
-            <span class="card__price-tag">$25.7</span>
-            <a href="#" class="card__shopping-cart">
-              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
-              class="card__shopping-cart-image">
-            </a>
-          </div>
-           <!-- /.card__price-->
-        </div>
-        <!-- /.card-->
+      <div id="soon" class="trends__cards-wrapper">
         <div class="card">
           <div style="background-image:url(../sass/blocks/trends/img/card-2.png)" class="card__image image-2">
           </div>
@@ -436,9 +422,9 @@
         </div>
         <!-- /.card-->
         <div class="card">
-          <div style="background-image:url(../sass/blocks/trends/img/card-3.png)" class="card__image image-3">
+          <div style="background-image:url(../sass/blocks/trends/img/card-1.png)" class="card__image image-1">
           </div>
-          <h3 class="card__title">Full Coloristy</h3>
+          <h3 class="card__title">Minimalist Style</h3>
           <div class="card__price">
             <span class="card__price-tag">$25.7</span>
             <a href="#" class="card__shopping-cart">
@@ -464,6 +450,20 @@
         </div>
         <!-- /.card-->
         <div class="card">
+          <div style="background-image:url(../sass/blocks/trends/img/card-3.png)" class="card__image image-3">
+          </div>
+          <h3 class="card__title">Full Coloristy</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$25.7</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
           <div style="background-image:url(../sass/blocks/trends/img/card-5.png)" class="card__image image-5">
           </div>
           <h3 class="card__title">Holiday Vibes</h3>
@@ -478,11 +478,11 @@
         </div>
         <!-- /.card-->
         <div class="card">
-          <div style="background-image:url(../sass/blocks/trends/img/card-6.png)" class="card__image image-6">
+          <div style="background-image:url(../sass/blocks/trends/img/card-7.png)" class="card__image image-7">
           </div>
-          <h3 class="card__title">Swaggie Shaggy</h3>
+          <h3 class="card__title">Red Formal</h3>
           <div class="card__price">
-            <span class="card__price-tag">$81.3</span>
+            <span class="card__price-tag">$66.8</span>
             <a href="#" class="card__shopping-cart">
               <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
               class="card__shopping-cart-image">
@@ -490,13 +490,12 @@
           </div>
            <!-- /.card__price-->
         </div>
-        <!-- /.card-->
         <div class="card">
-          <div style="background-image:url(../sass/blocks/trends/img/card-7.png)" class="card__image image-7">
+          <div style="background-image:url(../sass/blocks/trends/img/card-6.png)" class="card__image image-6">
           </div>
-          <h3 class="card__title">Red Formal</h3>
+          <h3 class="card__title">Swaggie Shaggy</h3>
           <div class="card__price">
-            <span class="card__price-tag">$66.8</span>
+            <span class="card__price-tag">$81.3</span>
             <a href="#" class="card__shopping-cart">
               <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
               class="card__shopping-cart-image">
