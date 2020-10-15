@@ -20,6 +20,23 @@ $(document).ready(function () {
     }
   });
 
+  // Stories slider
+  let storiesSlider = new Swiper('.stories-slider', {
+    autoHeight: true,
+    loop: true,
+    slidesPerView: 1,
+    keyboard: {
+      enabled: true,
+    },
+    mousewheel: {
+      invert: true
+    },
+    navigation: {
+      nextEl: '.stories__button--next',
+      prevEl: '.stories__button--prev'
+    }
+  });
+
   // Trends section tabs
   let tabsItem = $(".trends__tabs-item");
   let contentItem = $(".trends__cards-wrapper");
