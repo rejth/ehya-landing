@@ -4,9 +4,6 @@ $(document).ready(function () {
     autoHeight: true,
     loop: true,
     slidesPerView: 1,
-    keyboard: {
-      enabled: true
-    },
     autoplay: {
       delay: 7000
     },
@@ -25,9 +22,6 @@ $(document).ready(function () {
     autoHeight: true,
     loop: true,
     slidesPerView: 1,
-    keyboard: {
-      enabled: true,
-    },
     mousewheel: {
       invert: true
     },
