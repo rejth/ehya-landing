@@ -602,15 +602,21 @@
             Ознакомьтесь с нашим рассказом о моде.
             Написано нашим дизайнером и специалистом.
           </p>
-          <button class="stories__button stories__button--prev"></button>
-          <button class="stories__button stories__button--next"></button>
+          <button data-target="#prev" class="stories__button stories__button--prev">
+            <img id="prev" src="sass/blocks/stories/img/arrow-prev.svg" alt="Icon of arrow" class="img-svg">
+          </button>
+          <!-- /.prev-button -->
+          <button data-target="#next" class="stories__button stories__button--next stories__button--active">
+            <img id="next" src="sass/blocks/stories/img/arrow-next.svg" alt="Icon of arrow" class="img-svg img-svg--active">
+          </button>
+            <!-- /.prev-button -->
         </div>
         <!-- /.stories__text -->
         <div class="swiper-container stories-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="stories-slider__item story">
-                <div class="story__left">
+                <div class="story__item story__item--left">
                   <div style="background-image:url(sass/blocks/stories/img/story-left.png)" class="story__image"></div>
                   <div class="story__text">
                     <h3 class="story__title">Mix & Match Style 01: повседневный и формальный стиль</h3>
@@ -618,7 +624,7 @@
                   </div>
                 </div>
                 <!-- /.story__left-->
-                <div class="story__right">
+                <div class="story__item story__item--right">
                   <div style="background-image:url(sass/blocks/stories/img/story-right.png)" class="story__image"></div>
                   <div class="story__text">
                     <h3 class="story__title">Лайфхак: Купите одежду Thrifft на воскресном рынке</h3>
@@ -632,7 +638,7 @@
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
               <div class="stories-slider__item story">
-                <div class="story-item story-item--left">
+                <div class="story__item story__item--left">
                   <div style="background-image:url(sass/blocks/stories/img/woman.png)" class="story__image"></div>
                   <div class="story__text">
                     <h3 class="story__title">Slow life: как мы воплощаем наши принципы в дизайне</h3>
@@ -640,7 +646,7 @@
                   </div>
                 </div>
                 <!-- /.story__left-->
-                <div class="story__item story-item--right">
+                <div class="story__item story__item--right">
                   <div style="background-image:url(sass/blocks/stories/img/room.png)" class="story__image"></div>
                   <div class="story__text">
                     <h3 class="story__title">Квартира недели: как живет наш главный дизайнер</h3>
@@ -662,6 +668,35 @@
     <!-- /.container -->
   </div>
   <!-- /.stories -->
+
+    <!-- Newsletter Block -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter__wrapper">
+        <!-- Title -->
+        <div class="newsletter__text-wrapper">
+          <h2 class="newsletter__title">Подпишитесь</h2>
+          <p class="newsletter__strong">
+            Напишите свой адрес электронной почты.
+            Мы будем присылать вам новости из мира моды.
+          </p>
+        </div>
+        <!-- /.newsletter__text-wrapper -->
+        <!-- Subscribe Form -->
+        <form action="subscribe.php" method="POST" class="form newsletter__subscribe subscribe">
+          <img src="sass/blocks/newsletter/img/mail.svg" alt="Icon of mail" class="subscribe__mail-image">
+          <div class="subscribe__input-wrapper">
+            <input type="email" class="subscribe__input" placeholder="Ваш Emaill" name="email"/>
+          </div>
+          <!-- /.subscribe__input-wrapper -->
+          <button class="subscribe__button button">Подписаться</button>
+        </form>
+      </div>
+      <!-- /.newsletter__wrapper -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.newsletter -->
 
 <!-- Scripts -->
 <script src="js/jquery-3.5.1.min.js"></script>

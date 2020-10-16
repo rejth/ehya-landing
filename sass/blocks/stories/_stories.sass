@@ -36,31 +36,33 @@
     line-height: 36px
     color: $secondary-text-color
   &__button
+    position: relative
     margin-top: 42px
     width: 56px
     height: 56px
     cursor: pointer
-    border: 2px solid #183B56
+    border: 2px solid #959EAD
     border-radius: 2000px
+    z-index: 1000
     background-repeat: no-repeat
     background-position: center
     background-color: transparent
+  &__button--active
+    border: 2px solid $primary-text-color
   &__button--prev
     margin-right: 22px
-    background-image: url(../sass/blocks/stories/img/arrow-next.svg)
-  &__button--next
-    background-image: url(../sass/blocks/stories/img/arrow-next.svg)
 .stories-slider
   max-width: 662px
 .story
   display: flex
-  justify-content: space-between
-  &__story-item
+  width: 622px
+  &__item
+    width: 322px
     cursor: pointer
-  &__story-item + &__story-item
+  &__item + &__item
     margin-left: 28px
   &__image
-    width: 312px
+    max-width: 312px
     height: 317px
     overflow: hidden
     cursor: pointer
@@ -71,7 +73,9 @@
   &__text
     max-width: 312px
     padding: 20px
+    transform: translate(15px,-15px)
     background: #FAFDFF
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
   &__title
     margin-bottom: 12px
     max-width: 260px
@@ -88,3 +92,7 @@
     line-height: 22px
     text-decoration: none
     color: #1565D8
+// .img-svg path
+//   fill: #959EAD
+// .img-svg--active path
+//   fill: #183B56
