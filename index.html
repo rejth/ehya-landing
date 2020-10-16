@@ -1,13 +1,675 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/font.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css">
   <title>Ehya Market</title>
 </head>
 
 <body>
+  <!-- Header -->
+  <header class="navbar-menu">
+    <div class="container">
+      <div class="navbar-menu__wrapper">
+        <!-- Logo -->
+        <a href="index.hmtl" class="navbar-menu__logo logo">
+          <img
+            src="sass/blocks/header/img/logo.svg"
+            alt="Image of logo"
+            class="navbar-menu__logo-image" />
+        </a>
+        <!-- Navigation -->
+        <ul class="navbar-menu__list navbar-menu__list--mobile-hidden">
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Главная</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Новинки</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Тренды</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Отзывы</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Контакты</a>
+          </li>
+          <!-- /.navbar-menu__list -->
+        </ul>
+        <!-- Login button -->
+        <button class="navbar-menu__button button navbar-menu__button--mobile-hidden">Войти</button>
+        <!-- Button for media-request 768px -->
+        <button class="navbar-menu__mobile-button mobile-button">
+          <span class="navbar-menu__mobile-button-line"></span>
+          <span class="navbar-menu__mobile-button-line"></span>
+          <span class="navbar-menu__mobile-button-line"></span>
+        </button>
+      </div>
+      <!-- /.navnar-menu__wrapper -->
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- /.navbar-menu-->
+
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="hero__wrapper">
+      <a href="#" class="hero__tag"># READY TO BE COOL</a>
+      <h1 class="hero__title">Каждый может быть крутым <br> и модным</h1>
+      <p class="hero__description">
+        Чтобы быть в тренде и стать модным,
+        вам нужно носить отличную одежду и обновлять свой стиль.
+        Всё это вы можете найти здесь. Начните сейчас.
+      </p>
+      <button class="hero__button button">Подобрать одежду</button>
+      <ul class="hero__list">
+        <li class="hero__item">
+          <div class="hero__icon-wrapper">
+            <img
+              src="sass/blocks/hero/img/online.svg"
+              alt="Icon of online payment"
+              class="hero__icon" />
+          </div>
+          <a href="#" class="hero__link">Онлайн оплата</a>
+        </li>
+        <li class="hero__item">
+          <div class="hero__icon-wrapper">
+            <img
+              src="sass/blocks/hero/img/guarantee.svg"
+              alt="Icon of online payment"
+              class="hero__icon" />
+          </div>
+          <a href="#" class="hero__link">Гарантия</a>
+        </li>
+        <li class="hero__item">
+          <div class="hero__icon-wrapper">
+            <img
+              src="sass/blocks/hero/img/quality.svg"
+              alt="Icon of online payment"
+              class="hero__icon" />
+          </div>
+          <a href="#" class="hero__link">Качество</a>
+        </li>
+      </ul>
+    </div>
+    <img src="sass/blocks/hero/img/hero.png" alt="Image of woman" class="hero__image">
+    <!-- /.hero__text-wrapper -->
+  </section>
+  <!-- /.hero -->
+
+  <!-- Collection section -->
+  <section class="collection">
+    <div class="container">
+      <div class="collection__wrapper">
+        <div class="collection__woman">
+          <img
+            src="sass/blocks/collection/img/woman.png"
+            alt="Image of woman with flowers"
+            class="collection__image">
+        </div>
+        <!-- /.collection__woman -->
+        <div class="collection__images-wrapper">
+          <div class="collection__kitchen">
+            <img
+              src="sass/blocks/collection/img/kitchen.png"
+              alt="Image of kitchen"
+              class="collection__image">
+          </div>
+          <!-- /.collection__kitchen -->
+          <div class="collection__room">
+            <img
+              src="sass/blocks/collection/img/room.png"
+              alt="Image of room"
+              class="collection__image">
+          </div>
+          <!-- /.collection__room -->
+        </div>
+        <!-- /.collection__images-wrapper -->
+        <div class="collection__text">
+          <h2 class="collection__title">Новая зимняя коллекция</h2>
+          <p class="collection__description">
+            Сейчас зимний сезон.
+            Вы можете увидеть больше из этой коллекции, нажав кнопку ниже.
+            Успейте купить, пока коллекция есть в наличии.
+            Используйте код EHYA20, чтобы получить 20% скидку.
+          </p>
+          <div class="collection__link-wrapper">
+            <a href="#" class="collection__link">Посмотреть коллекцию</a>
+            <div class="collection__icon-wrapper">
+              <img
+                src="sass/blocks/collection/img/arrow.svg"
+                alt="Icon of arrow"
+                class="collection__icon"/>
+            </div>
+          </div>
+          <!-- /.collection__link-wrapper -->
+        </div>
+        <!-- /.collection__text -->
+      </div>
+      <!-- /.collection__wrapper -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.collection -->
+
+  <!-- Trends section -->
+  <section class="trends">
+    <div class="container">
+      <div class="trends__menu">
+        <h2 class="trends__title">Тренды</h2>
+        <!-- Tabs -->
+        <ul class="trends__tabs">
+          <li data-target="#new-items" class="trends__tabs-item trends__tabs-item--active">Новинки</li>
+          <li data-target="#best" class="trends__tabs-item">Лучшее</li>
+          <li data-target="#soon" class="trends__tabs-item">Скоро</li>
+        </ul>
+      </div>
+      <!-- /.trends__menu -->
+
+      <!-- New Items Tab -->
+      <div id="new-items" class="trends__cards-wrapper trends__cards-wrapper--active">
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-1.png)" class="card__image image-1">
+          </div>
+          <h3 class="card__title">Minimalist Style</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$25.7</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-2.png)" class="card__image image-2">
+          </div>
+          <h3 class="card__title">Luxury Gown</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$30.6</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-3.png)" class="card__image image-3">
+          </div>
+          <h3 class="card__title">Full Coloristy</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$25.7</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-4.png)" class="card__image image-4">
+          </div>
+          <h3 class="card__title">Pinky Winky</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$109</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-5.png)" class="card__image image-5">
+          </div>
+          <h3 class="card__title">Holiday Vibes</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$51.2</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-6.png)" class="card__image image-6">
+          </div>
+          <h3 class="card__title">Swaggie Shaggy</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$81.3</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-7.png)" class="card__image image-7">
+          </div>
+          <h3 class="card__title">Red Formal</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$66.8</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card see-more">
+          <div class="see-more__container">
+            <a href="#" class="see-more__link">
+              <div class="see-more__content-wrapper">
+                <img src="sass/blocks/trends/img/plus.svg" alt="Icon of plus" class="see-more__icon" />
+                <span class="see-more__text">Смотреть больше коллекций</span>
+              </div>
+            </a>
+          </div>
+          <!-- /.see-more__wrapper -->
+        </div>
+        <!-- /.see-more-->
+      </div>
+      <!-- /.trends__cards-wrapper -->
+
+      <!-- Best Items Tab -->
+      <div id="best" class="trends__cards-wrapper">
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-4.png)" class="card__image image-4">
+          </div>
+          <h3 class="card__title">Pinky Winky</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$109</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-5.png)" class="card__image image-5">
+          </div>
+          <h3 class="card__title">Holiday Vibes</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$51.2</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-6.png)" class="card__image image-6">
+          </div>
+          <h3 class="card__title">Swaggie Shaggy</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$81.3</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-1.png)" class="card__image image-1">
+          </div>
+          <h3 class="card__title">Minimalist Style</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$25.7</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+          <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-2.png)" class="card__image image-2">
+          </div>
+          <h3 class="card__title">Luxury Gown</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$30.6</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-3.png)" class="card__image image-3">
+          </div>
+          <h3 class="card__title">Full Coloristy</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$25.7</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-7.png)" class="card__image image-7">
+          </div>
+          <h3 class="card__title">Red Formal</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$66.8</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card see-more">
+          <div class="see-more__container">
+            <a href="#" class="see-more__link">
+              <div class="see-more__content-wrapper">
+                <img src="sass/blocks/trends/img/plus.svg" alt="Icon of plus" class="see-more__icon" />
+                <span class="see-more__text">Смотреть больше коллекций</span>
+              </div>
+            </a>
+          </div>
+          <!-- /.see-more__wrapper -->
+        </div>
+        <!-- /.see-more-->
+      </div>
+      <!-- /.trends__cards-wrapper -->
+
+      <!-- Soon Items Tab -->
+      <div id="soon" class="trends__cards-wrapper">
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-2.png)" class="card__image image-2">
+          </div>
+          <h3 class="card__title">Luxury Gown</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$30.6</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-1.png)" class="card__image image-1">
+          </div>
+          <h3 class="card__title">Minimalist Style</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$25.7</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-4.png)" class="card__image image-4">
+          </div>
+          <h3 class="card__title">Pinky Winky</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$109</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-3.png)" class="card__image image-3">
+          </div>
+          <h3 class="card__title">Full Coloristy</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$25.7</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-5.png)" class="card__image image-5">
+          </div>
+          <h3 class="card__title">Holiday Vibes</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$51.2</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-7.png)" class="card__image image-7">
+          </div>
+          <h3 class="card__title">Red Formal</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$66.8</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <div class="card">
+          <div style="background-image:url(sass/blocks/trends/img/card-6.png)" class="card__image image-6">
+          </div>
+          <h3 class="card__title">Swaggie Shaggy</h3>
+          <div class="card__price">
+            <span class="card__price-tag">$81.3</span>
+            <a href="#" class="card__shopping-cart">
+              <img src="sass/blocks/trends/img/shopping-cart.svg" alt="Icon of shopping cart"
+              class="card__shopping-cart-image">
+            </a>
+          </div>
+           <!-- /.card__price-->
+        </div>
+        <!-- /.card-->
+        <div class="card see-more">
+          <div class="see-more__container">
+            <a href="#" class="see-more__link">
+              <div class="see-more__content-wrapper">
+                <img src="sass/blocks/trends/img/plus.svg" alt="Icon of plus" class="see-more__icon" />
+                <span class="see-more__text">Смотреть больше коллекций</span>
+              </div>
+            </a>
+          </div>
+          <!-- /.see-more__wrapper -->
+        </div>
+        <!-- /.see-more-->
+      </div>
+      <!-- /.trends__cards-wrapper -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.trends -->
+
+  <!-- Reviews section -->
+  <div class="reviews">
+    <div class="swiper-container reviews-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="reviews-slider__item">
+            <img src="sass/blocks/reviews/img/quote-left.png" alt="Image of quotes" class="reviews-slider__image"/>
+            <p class="reviews-slider__text-review">
+              Мне очень нравятся дизайн и стили, которые создает Ehya.
+              Они такие разные и новаторские. Я покупала несколько раз из коллекций,
+              и что мне нравится, это то, что они действительно неподвластны времени,
+              а качество ткани просто превосходно.
+              Я с нетерпением жду новых коллекций от сезона к сезону
+            </p>
+            <span class="reviews-slider__reviewer">
+              Алисия Пума - клиент Fashun
+            </span> <!-- /.reviewer -->
+          </div>
+          <!-- /.reviews-slider__item -->
+        </div>
+        <!-- /.swiper-slide -->
+        <div class="swiper-slide">
+          <div class="reviews-slider__item">
+            <img src="sass/blocks/reviews/img/quote-left.png" alt="Image of quotes" class="reviews-slider__image"/>
+            <p class="reviews-slider__text-review">
+              Первый раз познакомилась с Ehya в 2018 году,
+              с тех пор стала постоянной клиенткой этого магазина.
+              Вещи эффектные, отличного качества, просто неубиваемые при носке,
+              ношу из по нескольку лет, если где не зацеплю.
+              Отдельная моя любовь-это черный комбинезон,
+              без которого просто не смогла уйти из магазина,
+              несмотря на то, что стоил прилично так.
+            </p>
+            <span class="reviews-slider__reviewer">
+              Александра Федотова- клиент Fashun
+            </span> <!-- /.reviewer -->
+          </div>
+          <!-- /.reviews-slider__item -->
+        </div>
+        <!-- /.swiper-slide -->
+        <div class="swiper-slide">
+          <div class="reviews-slider__item">
+            <img src="sass/blocks/reviews/img/quote-left.png" alt="Image of quotes" class="reviews-slider__image"/>
+            <p class="reviews-slider__text-review">
+              Я и мама очень любим этот Ehya. Нравится все, атмосфера магазина,
+              продавцы-консультанты. Всегда очень приятное обслуживание.
+              Модели женственные, утонченные, для стройных девушек.
+              И безусловно мне импонирует качество используемых материалов.
+              Одежда выглядят добротно, а также не портится после стирки,
+              не скатывается и не вытягивается во время носки.
+            </p>
+            <span class="reviews-slider__reviewer">
+              Маргарита Машевская- клиент Fashun
+            </span> <!-- /.reviewer -->
+          </div>
+          <!-- /.reviews-slider__item -->
+        </div>
+        <!-- /.swiper-slide -->
+      </div>
+      <!-- /.swiper-wrapper -->
+      <div class="swiper-pagination"></div>
+      <!-- /.swiper-pagination -->
+    </div>
+    <!-- /.swiper-container -->
+    <div class="horizontal-divider"></div>
+  </div>
+  <!-- /.reviews -->
+
+  <!-- Stories section -->
+  <div class="stories">
+    <div class="container">
+      <div class="stories__wrapper">
+        <div class="stories__text">
+          <a href="#" class="stories__tag">Истории</a>
+          <h2 class="stories__title">Это История Fashun</h1>
+          <p class="stories__description">
+            Ознакомьтесь с нашим рассказом о моде.
+            Написано нашим дизайнером и специалистом.
+          </p>
+          <button class="stories__button stories__button--prev"></button>
+          <button class="stories__button stories__button--next"></button>
+        </div>
+        <!-- /.stories__text -->
+        <div class="swiper-container stories-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="stories-slider__item story">
+                <div class="story__left">
+                  <div style="background-image:url(sass/blocks/stories/img/story-left.png)" class="story__image"></div>
+                  <div class="story__text">
+                    <h3 class="story__title">Mix & Match Style 01: повседневный и формальный стиль</h3>
+                    <a href="#" class="story__link">Читать далее</a>
+                  </div>
+                </div>
+                <!-- /.story__left-->
+                <div class="story__right">
+                  <div style="background-image:url(sass/blocks/stories/img/story-right.png)" class="story__image"></div>
+                  <div class="story__text">
+                    <h3 class="story__title">Лайфхак: Купите одежду Thrifft на воскресном рынке</h3>
+                    <a href="#" class="story__link">Читать далее</a>
+                  </div>
+                </div>
+                <!-- /.story__right-->
+              </div>
+              <!-- /.stories-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="stories-slider__item story">
+                <div class="story-item story-item--left">
+                  <div style="background-image:url(sass/blocks/stories/img/woman.png)" class="story__image"></div>
+                  <div class="story__text">
+                    <h3 class="story__title">Slow life: как мы воплощаем наши принципы в дизайне</h3>
+                    <a href="#" class="story__link">Читать далее</a>
+                  </div>
+                </div>
+                <!-- /.story__left-->
+                <div class="story__item story-item--right">
+                  <div style="background-image:url(sass/blocks/stories/img/room.png)" class="story__image"></div>
+                  <div class="story__text">
+                    <h3 class="story__title">Квартира недели: как живет наш главный дизайнер</h3>
+                    <a href="#" class="story__link">Читать далее</a>
+                  </div>
+                </div>
+                <!-- /.story__right-->
+              </div>
+              <!-- /.stories-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+          </div>
+          <!-- /.swiper-wrapper -->
+        </div>
+        <!-- /.swiper-container -->
+      </div>
+      <!-- /.stories__wrapper -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.stories -->
+
+<!-- Scripts -->
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 

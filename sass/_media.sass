@@ -1,0 +1,155 @@
+@media ( max-width: 1200px )
+  .container
+    max-width: 960px
+
+@media ( max-width: 992px )
+  .container
+    max-width: 768px
+
+@media ( max-width: 768px )
+  .container
+    max-width: 672px
+  .navbar-menu
+    &__list--mobile-hidden, &__button--mobile-hidden
+      display: none
+    &__logo
+      margin-right: auto
+    &__mobile-button
+      display: flex
+      padding: 0
+      width: 22px
+      height: 13.3px
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      border: none
+      cursor: pointer
+      background-color: $light
+    &__mobile-button-line
+      width: 22px
+      height: 2.2px
+      background-color: #3A4C66
+  .hero
+    margin-top: 30px
+    padding: 36px 0 36px 28px
+    max-width: 728px
+    min-height: 624px
+    background-position: 63.3% 47.53%
+    background-size: auto auto
+    &__title
+      max-width: 365px
+      font-size: 48px
+      line-height: 60px
+    &__description
+      max-width: 400px
+      font-size: 18px
+      line-height: 32px
+    &__list
+      max-width: 444px
+    &__item + &__item
+      margin-left: 21px
+  .collection
+    margin-top: 80px
+    &__wrapper
+      flex-wrap: wrap
+    &__woman
+      width: 322px
+      height: 490px
+    &__images-wrapper
+      margin-right: 0
+    &__text
+      flex-basis: 100%
+    &__title
+      margin-top: 40px
+      max-width: 100%
+    &__description
+      max-width: 95%
+    &__link-wrapper
+      margin-top: 24px
+      margin-bottom: 0
+
+@media ( max-width: 576px )
+  .container
+    max-width: 90%
+
+@media ( min-width: 320px)  and ( max-width: 480px )
+  .container
+    max-width: 290px
+    width: 90%
+  .navbar-menu
+    &__logo
+      margin-right: auto
+  .hero
+    margin-top: 24px
+    padding: 381px 20px 36px 28px
+    max-width: 320px
+    min-height: 899px
+    background-image: url('../sass/blocks/hero/img/hero-mobile.png')
+    &__wrapper
+      align-items: center
+      text-align: center
+    &__title
+      max-width: 244px
+      font-size: 32px
+      line-height: 40px
+    &__description
+      max-width: 280px
+      font-size: 16px
+      line-height: 28px
+    &__tag + &__title
+      margin-top: 20px
+    &__title + &__description
+      margin-top: 20px
+      text-align: center
+    &__button
+      margin-top: 24px
+      padding: 13px 49px
+      width: 100%
+      min-height: 48px
+      font-size: 16px
+      line-height: 22px
+    &__list
+      width: 100%
+    &__link
+      margin-top: 2px
+      font-size: 16px
+      line-height: 20px
+    &__item + &__item
+      margin-left: 16px
+    &__icon-wrapper
+      width: 24px
+      height: 24px
+  .collection
+    margin-top: 64px
+    &__woman
+      margin-right: 0
+      width: 290px
+      height: 300px
+    &__images-wrapper
+      flex-direction: row
+      margin-top: 14px
+    &__kitchen
+      flex-basis: 49%
+      width: 137px
+      height: 97px
+    &__room
+      flex-basis: 49%
+      width: 137px
+      height: 97px
+    &__kitchen + &__room
+      margin-top: 0
+      margin-left: 14px
+    &__text
+      text-align: center
+    &__title
+      margin-top: 36px
+      max-width: 100%
+      font-size: 28px
+      line-height: 36px
+    &__description
+      margin-top: 20px
+      max-width: 280px
+      font-size: 16px
+      line-height: 28px
+    &__link-wrapper
+      display: none

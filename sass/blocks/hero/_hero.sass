@@ -1,0 +1,91 @@
+.hero
+  position: relative
+  margin: auto
+  margin-top: 36px
+  padding: 62px 0 46px 107px
+  max-width: 1280px
+  min-height: 700px
+  border-radius: 8px
+  overflow: hidden
+  background-image: url('../sass/blocks/hero/img/hero.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  &__image
+    display: none
+  &__wrapper
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+  &__tag
+    padding: 6px 16px
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    text-align: center
+    text-decoration: none
+    text-transform: uppercase
+    background: rgba(54, 179, 126, 0.1)
+    border-radius: 2000px
+    color: #36B37E
+  &__title
+    max-width: 460px
+    font-family: "HK Grotesk Bold", sans-serif
+    font-size: 56px
+    line-height: 68px
+    letter-spacing: 0.2px
+    color: $primary-text-color
+  &__tag + &__title
+    margin-top: 28px
+  &__description
+    max-width: 652px
+    text-align: left
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: $secondary-text-color
+  &__title + &__description
+    margin-top: 28px
+  &__button
+    margin-top: 52px
+    padding: 15px 40px
+    min-width: 259px
+    min-height: 55px
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    cursor: pointer
+    border: none
+    color: $light
+    background-color: $primary-text-color
+    border-radius: 8px
+  &__list
+    margin: 0
+    margin-top: 48px
+    padding: 0
+    display: flex
+    max-width: 464px
+    align-items: center
+    flex-wrap: wrap
+    list-style-type: none
+  &__item
+    display: flex
+    cursor: pointer
+  &__item + &__item
+    margin-left: 31px
+  &__icon-wrapper
+    width: 36px
+    height: 36px
+  &__link
+    margin-top: 8px
+    font-family: "HK Grotesk Medium", sans-serif
+    font-size: 16px
+    line-height: 20px
+    letter-spacing: 0.2px
+    color: $primary-text-color
+    text-decoration: none
+  &__icon-wrapper + &__link
+    margin-left: 8px
