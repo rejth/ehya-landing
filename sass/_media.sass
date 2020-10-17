@@ -124,6 +124,7 @@
     padding-top: 80px
     padding-right: 23px
     padding-left: 23px
+    margin-right: 0
     margin: auto
     &__wrapper
       flex-direction: column
@@ -165,6 +166,7 @@
     margin-right: 0
   .footer
     padding-top: 64px
+    padding-bottom: 130px
     &__wrapper
       display: grid
       grid-template-columns: 253px 30px 1fr 30px 1fr
@@ -172,6 +174,8 @@
       grid-row-gap: 48px
       grid-auto-rows: minmax(60px, max-content)
       align-items: start
+    &__list
+      margin-right: 0
     &__info
       width: 253px
     &__summary-wrapper
@@ -200,10 +204,11 @@
       margin-right: auto
   .hero
     margin-top: 24px
-    padding: 381px 20px 36px 28px
+    padding: 381px 23px 36px 23px
     max-width: 320px
     min-height: 899px
     background-image: url('../sass/blocks/hero/img/hero-mobile.png')
+    background-size: cover
     &__wrapper
       align-items: center
       text-align: center
@@ -228,7 +233,11 @@
       font-size: 16px
       line-height: 22px
     &__list
-      width: 100%
+      max-width: 274px
+    // TODO: доделать
+    &__item--mauto
+      margin-left: auto
+      margin-top: 16px
     &__link
       margin-top: 2px
       font-size: 16px
@@ -272,3 +281,226 @@
       line-height: 28px
     &__link-wrapper
       display: none
+  .trends
+    margin-top: 104px
+    &__menu
+      flex-direction: column
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__tabs
+      margin-top: 24px
+    &__tabs-item
+      font-size: 16px
+      line-height: 22px
+    &__cards-wrapper--active
+      margin: auto
+      margin-top: 16px
+      width: 290px
+  .card
+    width: 140px
+    margin-top: 30px
+    height: 234px
+    &__image
+      height: 170px
+    &__title
+      margin-top: 13px
+      margin-left: 0
+      font-size: 16px
+      line-height: 20px
+    &__price
+      flex-wrap: wrap
+      align-items: center
+      justify-content: start
+    &__price-tag
+      margin-left: 0
+      margin-right: 9px
+      font-size: 14px
+      line-height: 24px
+    &__shopping-cart
+      width: 14px
+      height: 32px
+      margin-right: 9px
+      transform: translateY(8.5px)
+  // Card Images - from left to right
+  .image-1
+    background-size: cover
+  .image-2
+    background-size: cover
+    background-position-x: 45%
+    background-position-y: 10%
+  .image-3
+    background-size: cover
+    background-position-x: 45%
+    background-position-y: 20%
+  .image-4
+    background-size: cover
+    background-position-x: 45%
+    background-position-y: 65%
+  .image-5
+    background-size: cover
+    background-position-x: 45%
+    background-position-y: 25%
+  .image-6
+    background-size: cover
+    background-position-x: 45%
+    background-position-y: 8%
+  .image-7
+    background-size: cover
+    background-position-x: 50%
+    background-position-y: 1%
+  .see-more
+    &__container
+      padding-left: 0
+      padding-right: 0
+      height: 170px
+    &__link
+      margin: 0
+      align-self: start
+    &__content-wrapper
+      margin-top: 40px
+    &__icon
+      width: 25px
+      height: 32px
+    &__text
+      margin-top: 15px
+      font-size: 17px
+      line-height: 22px
+  .reviews
+    margin-top: 48px
+  .reviews-slider
+    &__item
+      max-width: 280px
+    &__text-review
+      margin-top: 13px
+      font-size: 18px
+      line-height: 36px
+    &__reviewer
+      margin-top: 24px
+      margin-bottom: 24px
+      max-width: 145px
+  .horizontal-divider
+    margin-top: 64px
+    width: 100%
+  .stories
+    padding-top: 49px
+    padding-right: 0
+    padding-left: 0
+    margin: auto
+    &__wrapper
+      flex-direction: column
+      align-items: center
+    &__text
+      margin: auto
+    &__title
+      max-width: 278px
+      font-size: 28px
+      line-height: 36px
+    &__description
+      max-width: 280px
+      font-size: 16px
+      line-height: 28px
+  .stories-slider
+    margin-top: 36px
+    max-width: 280px
+  .story
+    flex-wrap: wrap
+    width: 280px
+    &__item
+      width: 280px
+    &__item + &__item
+      margin-left: 0
+      margin-top: 24px
+    &__image
+      width: 270px
+    &__text
+      max-width: 270px
+      transform: translate(5px,-15px)
+    &__title
+      font-size: 20px
+      line-height: 24px
+  .newsletter
+    margin-top: 64px
+    padding: 64px 20px 64px 20px
+    &__wrapper
+      flex-direction: column
+    &__text-wrapper
+      text-align: center
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__strong
+      margin-top: 24px
+      width: 280px
+      font-size: 16px
+      line-height: 28px
+  .subscribe
+    margin-top: 36px
+    margin-right: 0
+    flex-direction: column
+    width: 280px
+    height: 106px
+    #email-error
+      position: relative
+    &__input-wrapper
+      width: 100%
+      height: 48px
+      margin-bottom: 10px
+    &__mail-image
+      top: 18px
+    &__input
+      padding-right: 30px
+    &__button
+      position: relative
+      display: block
+      padding: 12px 24px
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      max-width: 280px
+      width: 100%
+      height: 48px
+      border-radius: 8px
+  .footer
+    padding-top: 48px
+    padding-bottom: 73px
+    &__wrapper
+      grid-template-columns: 1fr
+      grid-row-gap: 30px
+    &__title
+      margin-bottom: 0
+      font-size: 16px
+      line-height: 22px
+    &__list
+      margin-right: 0
+    &__item
+      margin-top: 15px
+      font-size: 14px
+      line-height: 20px
+    &__summary-wrapper
+      display: flex
+      flex-direction: column
+      max-width: 100%
+      align-items: center
+      margin-top: 35px
+      margin-right: 0
+      margin-auto: 0
+    &__info
+      margin-top: 14px
+      width: 230px
+      font-size: 14px
+      line-height: 24px
+      text-align: center
+    &__navigation
+      grid-row: 1
+      grid-column: 1
+    &__services
+      grid-row: 2
+      grid-column: 1
+    &__company
+      grid-row: 3
+      grid-column: 1
+    &__contacts
+      grid-row: 4
+      grid-column: 1
