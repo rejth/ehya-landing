@@ -4,26 +4,33 @@
   padding-bottom: 131.81px
   // Footer wrapper
   &__wrapper
-    display: grid
-    grid-template-columns: 166px 119px 3.3fr 129px 5.3fr 94px 4fr
-    grid-gap: 0
-    grid-auto-rows: minmax(60px, max-content)
-    align-items: start
+    display: flex
+    max-width: 1042px
+    align-items: flex-start
+    // justify-content: space-between
+    align: left
   // All titles
   &__title
+    margin-bottom: 7px
     font-family: Open Sans, sans-serif
     font-style: normal
     font-weight: bold
     font-size: 18px
     line-height: 25px
     color: $primary-text-color
+  // All lists blocks
+  &__list
+    margin-right: 30px
   // All lists
   &__ul
     padding: 0
     margin: 0
+    width: 165px
+    text-align: left
     list-style: none
   // All list items
   &__item
+    margin-top: 24px
     font-family: Open Sans, sans-serif
     font-style: normal
     font-weight: normal
@@ -34,3 +41,33 @@
   &__link
     text-decoration: none
     color: inherit
+  &__summary-wrapper
+    margin-right: 30px
+    max-width: 263px
+  &__logo
+    display: flex
+    align-items: flex-end
+  &__info
+    margin-top: 28.08px
+    max-width: 100%
+    font-family: Open Sans, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 28px
+    color: $secondary-text-color
+    text-align: left
+  &__social-network
+    display: flex
+    max-width: 263px
+    align-self: center
+  &__social-links
+    display: flex
+    max-width: 187px
+    align-items: center
+  &__link-image
+    margin-top: 32.05px
+    width: 42px
+    height: 40px
+  &__link-image + &__link-image
+    margin-left: 7px
