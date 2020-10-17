@@ -70,20 +70,53 @@ $(document).ready(function () {
     $(this).addClass("stories__button--active");
   });
 
+  // Modal window
+  var modalButton = $("[data-toggle=modal]");
+  var closeModalButton = $(".modal__close");
+  modalButton.on("click", openModalWindow);
+  closeModalButton.on("click", closeModalWindow);
+
+  function openModalWindow() {
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.addClass("modal__overlay--visible");
+    modalDialog.addClass("modal__dialog--visible");
+  };
+
+  function closeModalWindow(event) {
+    event.preventDefault()
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.removeClass("modal__overlay--visible");
+    modalDialog.removeClass("modal__dialog--visible");
+  };
+
   // Form Validator
   $(".form").each(function () {
     $(this).validate({
       errorClass: "invalid",
       rules: {
+        name: "required",
+        phone: {
+          required: true,
+          minlength: 11
+        },
         email: {
           required: true,
           email: true
         }
       },
       messages: {
+        name: {
+          required: "Введите ФИО, пожалуйста"
+        },
+        phone: {
+          required: "Номер телефона нужен, чтобы связаться с Вами!",
+          minlength: "Номер телефона должен быть не менее 11 символов"
+        },
         email: {
-          required: "Нам нужна Ваша электронная почта, чтобы связаться с вами",
-          email: "Ваша электронная почта должна быть в формате name@domain.com"
+          required: "Электронная почта нужна, чтобы связаться с Вами!",
+          email: "Электронная почта должна быть в формате name@domain.com"
         }
       }
     });

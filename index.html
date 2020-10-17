@@ -70,7 +70,9 @@
         вам нужно носить отличную одежду и обновлять свой стиль.
         Всё это вы можете найти здесь. Начните сейчас.
       </p>
-      <button class="hero__button button">Подобрать одежду</button>
+      <button data-toggle="modal" data-href="#booking-modal" class="hero__button button">
+        Подобрать одежду
+      </button>
       <ul class="hero__list">
         <li class="hero__item">
           <div class="hero__icon-wrapper">
@@ -834,15 +836,15 @@
           <img src="sass/blocks/modal/img/close.svg" alt="Image of close button" />
         </a>
         <!-- Window content -->
-        <h3 class="modal__title">Booking</h3>
+        <h3 class="modal__title">Связаться с нами</h3>
         <form action="send.php" method="POST" class="form modal__form">
-          <input type="text" class="modal__input" placeholder="Your Full Name*" name="name" />
-          <input type="tel" class="modal__input" placeholder="Phone Number*" name="phone"
+          <input type="text" class="modal__input" placeholder="ФИО*" name="name" />
+          <input type="tel" class="modal__input" placeholder="Номер телефона*" name="phone"
             data-mask="+7 (000) 000-00-00" />
-          <input type="email" class="modal__input" placeholder="Email*" name="email" />
+          <input type="email" class="modal__input" placeholder="E-mail*" name="email" />
           <textarea class="modal__message" placeholder="Message" name="message"></textarea>
-          <button class="modal__button">Send</button>
-          <span class="modal__info">* Required Fields</span>
+          <button class="modal__button">Отправить</button>
+          <span class="modal__info">* Обязательные поля</span>
         </form>
       </div>
       <!-- /.modal__dialog-guts -->
@@ -854,6 +856,7 @@
   <!-- Scripts -->
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/aos.js"></script>
