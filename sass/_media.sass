@@ -33,7 +33,7 @@
 
 @media ( max-width: 768px )
   .container
-    max-width: 672px
+    max-width: 682px
   .navbar-menu
     &__list--mobile-hidden, &__button--mobile-hidden
       display: none
@@ -92,6 +92,100 @@
     &__link-wrapper
       margin-top: 24px
       margin-bottom: 0
+  .trends
+    margin-top: 80px
+    &__menu
+      flex-direction: column
+    &__tabs
+      margin-top: 27.5px
+    &__cards-wrapper--active
+      margin: auto
+      margin-top: 8.5px
+      width: 608px
+  .see-more
+    &__link
+      margin: auto
+  .card
+    width: 280px
+    margin-top: 48px
+  .reviews
+    margin-top: 80px
+  .reviews-slider
+    &__item
+      max-width: 630px
+    &__text-review
+      margin-top: 28px
+    &__reviewer
+      margin-top: 24px
+      margin-bottom: 28px
+  .horizontal-divider
+    width: 728px
+  .stories
+    padding-top: 80px
+    padding-right: 23px
+    padding-left: 23px
+    margin: auto
+    &__wrapper
+      flex-direction: column
+      align-items: center
+    &__text
+      margin: auto
+      text-align: center
+    &__title
+      margin-top: 24px
+      max-width: 567px
+    &__description
+      margin-top: 16px
+      max-width: 568px
+      text-align: center
+    &__button
+      margin-top: 36px
+  .stories-slider
+    margin-top: 36px
+    max-width: 682px
+  .story
+    width: 682px
+    &__item
+      width: 332px
+    &__item + &__item
+      margin-left: 28px
+    &__image
+      width: 322px
+    &__text
+      transform: translate(10px,-15px)
+  .newsletter
+    margin-top: 80px
+    padding: 72px 0 80px 0
+    &__wrapper
+      flex-direction: column
+    &__text-wrapper
+      text-align: center
+  .subscribe
+    margin-top: 56px
+    margin-right: 0
+  .footer
+    padding-top: 64px
+    &__wrapper
+      display: grid
+      grid-template-columns: 253px 30px 1fr 30px 1fr
+      grid-gap: 0
+      grid-row-gap: 48px
+      grid-auto-rows: minmax(60px, max-content)
+      align-items: start
+    &__info
+      width: 253px
+    &__summary-wrapper
+      grid-column: 1 / 2
+    &__navigation
+      grid-column: 3 / 4
+    &__services
+      grid-column: 5 / 6
+    &__company
+      grid-row: 2 / 3
+      grid-column: 3 / 4
+    &__contacts
+      grid-row: 2 / 3
+      grid-column: 5 / 6
 
 @media ( max-width: 576px )
   .container

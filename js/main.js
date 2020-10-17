@@ -75,6 +75,7 @@ $(document).ready(function () {
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModalWindow);
   closeModalButton.on("click", closeModalWindow);
+  // $('body').on("click", closeModalWindowOnClickAnySpace);
 
   function openModalWindow() {
     var modalOverlay = $(".modal__overlay");
@@ -83,6 +84,7 @@ $(document).ready(function () {
     modalDialog.addClass("modal__dialog--visible");
   };
 
+  // Close by clicking button
   function closeModalWindow(event) {
     event.preventDefault()
     var modalOverlay = $(".modal__overlay");
@@ -90,6 +92,25 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   };
+
+    // Close by clicking button
+  // function closeModalWindowOnClickAnySpace(event) {
+  //   event.preventDefault()
+  //   var modalOverlay = $(".modal__overlay");
+  //   var modalDialog = $(".modal__dialog");
+  //   if ( event.target !== $(".modal__dialog") ) {
+  //     modalOverlay.removeClass("modal__overlay--visible");
+  //     modalDialog.removeClass("modal__dialog--visible");
+  //   }
+  // };
+
+  // Close by clicking ESC
+  // document.addEventListener('keydown', function (event) {
+  //     var key = event.key || event.keyCode;
+  //     if (key === 'Escape' || key === 'Esc' || key === 27) {
+  //         console.log('test');
+  //     }
+  // });
 
   // Form Validator
   $(".form").each(function () {
