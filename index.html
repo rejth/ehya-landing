@@ -280,7 +280,7 @@
             <a href="#" class="see-more__link">
               <div class="see-more__content-wrapper">
                 <img src="sass/blocks/trends/img/plus.svg" alt="Icon of plus" class="see-more__icon" />
-                <span class="see-more__text">Смотреть больше коллекций</span>
+                <span class="see-more__text">Смотреть <br> больше коллекций</span>
               </div>
             </a>
           </div>
@@ -599,8 +599,8 @@
           <a href="#" class="stories__tag">Истории</a>
           <h2 class="stories__title">Это История Fashun</h2>
           <p class="stories__description">
-            Ознакомьтесь с нашим рассказом о моде.
-            Написано нашим дизайнером и специалистом.
+            Ознакомьтесь с нашим рассказом <br> о моде.
+            Написано нашим дизайнером <br> и специалистом.
           </p>
           <button data-target="#prev" class="stories__button stories__button--prev">
             <img id="prev" src="sass/blocks/stories/img/arrow-prev.svg" alt="Icon of arrow" class="img-svg">
@@ -677,7 +677,7 @@
         <div class="newsletter__text-wrapper">
           <h2 class="newsletter__title">Подпишитесь</h2>
           <p class="newsletter__strong">
-            Напишите свой адрес электронной почты.
+            Напишите свой адрес электронной почты.<br>
             Мы будем присылать вам новости из мира моды.
           </p>
         </div>
@@ -821,6 +821,35 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+
+  <!-- Modal Window -->
+  <div id="buy-modal" class="modal">
+    <!-- Background color -->
+    <div class="modal__overlay"></div>
+    <!-- Window -->
+    <div class="modal__dialog">
+      <!-- Close button -->
+      <div class="modal__dialog-guts">
+        <a href="#" class="modal__close">
+          <img src="sass/blocks/modal/img/close.svg" alt="Image of close button" />
+        </a>
+        <!-- Window content -->
+        <h3 class="modal__title">Booking</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input type="text" class="modal__input" placeholder="Your Full Name*" name="name" />
+          <input type="tel" class="modal__input" placeholder="Phone Number*" name="phone"
+            data-mask="+7 (000) 000-00-00" />
+          <input type="email" class="modal__input" placeholder="Email*" name="email" />
+          <textarea class="modal__message" placeholder="Message" name="message"></textarea>
+          <button class="modal__button">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog-guts -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
 
   <!-- Scripts -->
   <script src="js/jquery-3.5.1.min.js"></script>
