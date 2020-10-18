@@ -173,6 +173,14 @@ $(document).ready(function () {
 		top = $(id).offset().top;
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top}, 1500);
-	});
+  });
+
+  // Menu Button
+  var menuButton = document.querySelector(".navbar-menu__mobile-button")
+  menuButton.addEventListener("click", function () {
+    document
+      .querySelector(".navbar-menu__list")
+      .classList.toggle("navbar-menu__list--mobile-visible");
+  });
 
 });

@@ -17,7 +17,7 @@
 
 <body>
   <!-- Header -->
-  <header class="navbar-menu navbar--mobile-fixed">
+  <header class="navbar-menu navbar-menu--mobile-fixed">
     <div class="container">
       <div class="navbar-menu__wrapper">
         <!-- Logo -->
@@ -28,7 +28,7 @@
             class="navbar-menu__logo-image" />
         </a>
         <!-- Navigation -->
-        <ul class="navbar-menu__list navbar-menu__list--mobile-hidden">
+        <ul class="navbar-menu__list">
           <li class="navbar-menu__item">
             <a href="#hero" class="navbar-menu__link">Главная</a>
           </li>
@@ -44,10 +44,12 @@
           <li class="navbar-menu__item">
             <a href="#footer" class="navbar-menu__link">Контакты</a>
           </li>
+          <!-- Login button -->
+          <li class="navbar-menu__item">
+            <button data-toggle="modal-login" data-href="#login-modal" class="navbar-menu__button button">Войти</button>
+          </li>
           <!-- /.navbar-menu__list -->
         </ul>
-        <!-- Login button -->
-        <button data-toggle="modal-login" data-href="#login-modal" class="navbar-menu__button button navbar-menu__button--mobile-hidden">Войти</button>
         <!-- Button for media-request 768px -->
         <button class="navbar-menu__mobile-button mobile-button">
           <span class="navbar-menu__mobile-button-line"></span>
