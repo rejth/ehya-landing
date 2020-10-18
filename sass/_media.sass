@@ -219,7 +219,7 @@
       max-width: 100%
       height: 324px
       max-height: 100%
-      top: 67.2px
+      top: 10px
       z-index: 5000
       background-color: $light
     &__item + &__item
@@ -742,7 +742,7 @@
       max-width: 100%
       height: 324px
       max-height: 100%
-      top: 67.2px
+      top: 10px
       z-index: 5000
       background-color: $light
     &__item + &__item
@@ -792,16 +792,14 @@
     &__button
       margin-top: 24px
       padding: 13px 49px
-      width: 100%
+      width: 257px
       min-height: 48px
       font-size: 16px
       line-height: 22px
     &__list
       max-width: 274px
-    // TODO: доделать
-    &__item--mauto
-      margin-left: auto
-      margin-top: 16px
+    &__item--visible
+      display: none
     &__link
       margin-top: 2px
       font-size: 16px
@@ -811,6 +809,10 @@
     &__icon-wrapper
       width: 24px
       height: 24px
+  .list-item-hidden
+    margin-top: 16px
+    display: flex
+    cursor: pointer
   .collection
     margin-top: 64px
     &__woman
