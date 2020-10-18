@@ -92,6 +92,28 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible");
   };
 
+  // Modal Login window
+  var modalLoginButton = $("[data-toggle=modal-login]");
+  var closeModalLoginButton = $(".modal-login__close");
+  modalLoginButton.on("click", openModalLoginWindow);
+  closeModalLoginButton.on("click", closeModalLoginWindow);
+
+  function openModalLoginWindow() {
+    var modalLoginOverlay = $(".modal-login__overlay");
+    var modalLoginDialog = $(".modal-login__dialog");
+    modalLoginOverlay.addClass("modal-login__overlay--visible");
+    modalLoginDialog.addClass("modal-login__dialog--visible");
+  };
+
+  // Close by clicking button
+  function closeModalLoginWindow(event) {
+    event.preventDefault()
+    var modalLoginOverlay= $(".modal-login__overlay");
+    var modalLoginDialog = $(".modal-login__dialog");
+    modalLoginOverlay.removeClass("modal-login__overlay--visible");
+    modalLoginDialog.removeClass("modal-login__dialog--visible");
+  };
+
   // Form Validator
   $(".form").each(function () {
     $(this).validate({
