@@ -183,4 +183,12 @@ $(document).ready(function () {
       .classList.toggle("navbar-menu__list--mobile-visible");
   });
 
+  var closeDropDownButton = $(".navbar-menu__close-dropdown");
+  closeDropDownButton.on("click", closeDropDownWindow);
+
+  function closeDropDownWindow(event) {
+    event.preventDefault()
+    var modalOverlay = $(".navbar-menu__list");
+    modalOverlay.removeClass("navbar-menu__list--mobile-visible");
+  };
 });
