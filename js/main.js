@@ -127,6 +127,10 @@ $(document).ready(function () {
         email: {
           required: true,
           email: true
+        },
+        password: {
+          required: true,
+          minlength: 6
         }
       },
       messages: {
@@ -140,6 +144,10 @@ $(document).ready(function () {
         email: {
           required: "Электронная почта нужна, чтобы связаться с Вами!",
           email: "Электронная почта должна быть в формате name@domain.com"
+        },
+        password: {
+          required: "Пароль нужен, чтобы войти в личный кабинет!",
+          minlength: "Пароль не может содержать меньше 6 символов"
         }
       }
     });
@@ -148,13 +156,10 @@ $(document).ready(function () {
 	$(".navbar-menu__list").on("click", "a", function (event) {
 		//отменяем стандартную обработку нажатия по ссылке
 		event.preventDefault();
-
 		//забираем идентификатор бока с атрибута href
 		var id  = $(this).attr('href'),
-
 		//узнаем высоту от начала страницы до блока на который ссылается якорь
 		top = $(id).offset().top;
-
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top}, 1500);
   });
@@ -162,13 +167,10 @@ $(document).ready(function () {
 	$(".footer__navigation").on("click", "a", function (event) {
 		//отменяем стандартную обработку нажатия по ссылке
 		event.preventDefault();
-
 		//забираем идентификатор бока с атрибута href
 		var id  = $(this).attr('href'),
-
 		//узнаем высоту от начала страницы до блока на который ссылается якорь
 		top = $(id).offset().top;
-
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top}, 1500);
 	});
