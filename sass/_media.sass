@@ -191,9 +191,17 @@
       grid-column: 5 / 6
 
 @media ( max-width: 855px )
+  body
+    padding-top: 103.2px
   .container
     width: 768px
     max-width: 90%
+  .navbar-menu--mobile-fixed
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    z-index: 100
   .navbar-menu
     &__list--mobile-hidden, &__button--mobile-hidden
       display: none
