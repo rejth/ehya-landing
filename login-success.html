@@ -28,26 +28,31 @@
             class="navbar-menu__logo-image" />
         </a>
         <!-- Navigation -->
-        <ul class="navbar-menu__list navbar-menu__list--mobile-hidden">
-          <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Главная</a>
+        <ul class="navbar-menu__list">
+          <li class="navbar-menu__item navbar-menu__close-dropdown">
+            <img src="img/close.svg" alt="Image of close button" />
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Новинки</a>
+            <a href="#hero" class="navbar-menu__link">Главная</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Тренды</a>
+            <a href="#collection" class="navbar-menu__link">Новинки</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Отзывы</a>
+            <a href="#trends" class="navbar-menu__link">Тренды</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Контакты</a>
+            <a href="#reviews" class="navbar-menu__link">Отзывы</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#footer" class="navbar-menu__link">Контакты</a>
+          </li>
+          <!-- Login button -->
+          <li class="navbar-menu__item">
+            <button data-toggle="modal-login" data-href="#login-modal" class="navbar-menu__button button">Личный кабинет</button>
           </li>
           <!-- /.navbar-menu__list -->
         </ul>
-        <!-- Login button -->
-        <button class="navbar-menu__button button navbar-menu__button--mobile-hidden">Личный кабинет</button>
         <!-- Button for media-request 768px -->
         <button class="navbar-menu__mobile-button mobile-button">
           <span class="navbar-menu__mobile-button-line"></span>
