@@ -189,6 +189,11 @@
     &__contacts
       grid-row: 2 / 3
       grid-column: 5 / 6
+  .modal
+    // Window
+    &__dialog
+      padding-left: 58px
+      padding-right: 58px
 
 @media ( max-width: 855px )
   .container
@@ -660,6 +665,17 @@
     &__contacts
       grid-row: 4
       grid-column: 1
+  .modal, .modal-login
+    &__dialog
+      padding-left: 58px
+      padding-right: 58px
+    // Window
+    &__button
+      margin-top: 15px
+      width: 100%
+      order: 100
+    &__info
+      margin-bottom: 0
 
 @media ( min-width: 320px)  and ( max-width: 480px )
   #newsletter-br
