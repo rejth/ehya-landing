@@ -148,10 +148,46 @@
       margin-bottom: 28px
   .horizontal-divider
     width: 90%
+  // .story
+  //   width: 480px
+  //   &__item
+  //     width: 240px
+  .stories
+    padding-top: 80px
+    padding-right: 23px
+    padding-left: 23px
+    margin-right: 0
+    margin: auto
+    &__wrapper
+      flex-direction: column
+      align-items: center
+    &__text
+      margin: auto
+      text-align: center
+    &__title
+      margin-top: 24px
+      max-width: 567px
+    &__description
+      margin-top: 16px
+      max-width: 568px
+      text-align: center
+    &__button
+      margin-top: 36px
+  .stories-slider
+    margin-top: 36px
+    max-width: 100%
   .story
-    width: 436px
+    width: 100%
     &__item
-      width: 300px
+      width: 50%
+    &__item + &__item
+      margin-left: 18px
+    &__image
+      width: 100%
+      max-width: 100%
+    &__text
+      max-width: 95%
+      transform: translate(10px,-15px)
   .newsletter
     margin-top: 80px
     padding: 72px 0 80px 0
@@ -336,8 +372,10 @@
       display: none
     &__logo
       margin-right: auto
+      margin-left: 20px
     &__mobile-button
       display: flex
+      margin-right: 20px
       padding: 0
       width: 22px
       height: 13.3px
@@ -366,6 +404,12 @@
       max-width: 400px
       font-size: 18px
       line-height: 32px
+    &__tag + &__title
+      margin-top: 24px
+    &__title + &__description
+      margin-top: 20px
+    &__button
+      margin-top: 36.5px
     &__list
       max-width: 444px
     &__item + &__item
@@ -457,8 +501,10 @@
     &__item + &__item
       margin-left: 28px
     &__image
-      width: 322px
+      width: 95%
+      max-width: 95%
     &__text
+      max-width: 95%
       transform: translate(10px,-15px)
   .newsletter
     margin-top: 80px
@@ -797,6 +843,7 @@
       font-size: 16px
       line-height: 22px
     &__list
+      margin-top: 22px
       max-width: 274px
     &__item--visible
       display: none
@@ -865,8 +912,9 @@
       width: 290px
   .card
     width: 140px
-    margin-top: 30px
+    margin-top: 20px
     height: 234px
+    flex-basis: initial
     &__image
       height: 170px
     &__title
@@ -949,7 +997,7 @@
     margin-top: 64px
     width: 90%
   .stories
-    padding-top: 49px
+    padding-top: 48px
     padding-right: 0
     padding-left: 0
     margin: auto
@@ -985,6 +1033,8 @@
     &__title
       font-size: 20px
       line-height: 24px
+  #this-hidden
+    display: none
   .newsletter
     margin-top: 64px
     padding: 64px 20px 64px 20px
