@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -17,7 +17,7 @@
 
 <body>
   <!-- Header -->
-  <header class="navbar-menu">
+  <header class="navbar-menu navbar-menu--mobile-fixed">
     <div class="container">
       <div class="navbar-menu__wrapper">
         <!-- Logo -->
@@ -67,7 +67,7 @@
   <!-- /.navbar-menu-->
 
   <!-- Hero section -->
-  <section class="hero">
+  <section id="hero" class="hero">
     <div class="hero__wrapper">
       <a href="#" class="hero__tag"># READY TO BE COOL</a>
       <h1 class="hero__title">Каждый может быть крутым <br> и модным</h1>
@@ -98,7 +98,7 @@
           </div>
           <a href="#" class="hero__link">Гарантия</a>
         </li>
-        <li class="hero__item--mauto hero__item">
+        <li class="hero__item hero__item--visible">
           <div class="hero__icon-wrapper">
             <img
               src="sass/blocks/hero/img/quality.svg"
@@ -108,6 +108,16 @@
           <a href="#" class="hero__link">Качество</a>
         </li>
       </ul>
+      <!-- For 320px - 480px adaptive -->
+      <div class="list-item-hidden">
+        <div class="list-item-hidden__icon-wrapper">
+          <img
+            src="sass/blocks/hero/img/quality.svg"
+            alt="Icon of online payment"
+            class="list-item-hidden__icon" />
+        </div>
+        <a href="#" class="list-item-hidden__link">Качество</a>
+      </div>
     </div>
     <img src="sass/blocks/hero/img/hero.png" alt="Image of woman" class="hero__image">
     <!-- /.hero__text-wrapper -->
@@ -115,7 +125,7 @@
   <!-- /.hero -->
 
   <!-- Collection section -->
-  <section class="collection">
+  <section id="collection" class="collection">
     <div class="container">
       <div class="collection__wrapper">
         <div class="collection__woman">
@@ -170,7 +180,7 @@
   <!-- /.collection -->
 
   <!-- Trends section -->
-  <section class="trends">
+  <section id="trends" class="trends">
     <div class="container">
       <div class="trends__menu">
         <h2 class="trends__title">Тренды</h2>
@@ -532,7 +542,7 @@
   <!-- /.trends -->
 
   <!-- Reviews section -->
-  <div class="reviews">
+  <section id="reviews" class="reviews">
     <div class="swiper-container reviews-slider">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -543,7 +553,7 @@
               Они такие разные и новаторские. Я покупала несколько раз из коллекций,
               и что мне нравится, это то, что они действительно неподвластны времени,
               а качество ткани просто превосходно.
-              Я с нетерпением жду новых коллекций от сезона к сезону
+              <span id="wait">Я с нетерпением жду новых коллекций от сезона к сезону</span>
             </p>
             <span class="reviews-slider__reviewer">
               Алисия Пума - клиент Fashun
@@ -596,16 +606,16 @@
     </div>
     <!-- /.swiper-container -->
     <div class="horizontal-divider"></div>
-  </div>
+  </section>
   <!-- /.reviews -->
 
   <!-- Stories section -->
-  <div class="stories">
+  <section id="stories" class="stories">
     <div class="container">
       <div class="stories__wrapper">
         <div class="stories__text">
           <a href="#" class="stories__tag">Истории</a>
-          <h2 class="stories__title">Это История Fashun</h2>
+          <h2 class="stories__title"><span id="this-hidden">Это</span> История Fashun</h2>
           <p class="stories__description">
             Ознакомьтесь с нашим рассказом <br id="story-br"> о моде.
             Написано нашим дизайнером и специалистом.
@@ -674,11 +684,11 @@
       <!-- /.stories__wrapper -->
     </div>
     <!-- /.container -->
-  </div>
+  </section>
   <!-- /.stories -->
 
     <!-- Newsletter Block -->
-  <section class="newsletter">
+  <section id="newsletter" class="newsletter">
     <div class="container">
       <div class="newsletter__wrapper">
         <!-- Title -->
@@ -708,7 +718,7 @@
   <!-- /.newsletter -->
 
  <!-- Footer-->
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <div class="container">
       <div class="footer__wrapper">
         <div class="footer__summary-wrapper">
@@ -750,19 +760,19 @@
           <h3 class="footer__title">Навигация</h3>
           <ul class="footer__ul">
             <li class="footer__item">
-              <a href="#" class="footer__link">Новая коллекция</a>
+              <a href="#collection" class="footer__link">Новая коллекция</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Трендовая одежда</a>
+              <a href="#trends" class="footer__link">Трендовая одежда</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Истории Fashun</a>
+              <a href="#stories" class="footer__link">Истории Fashun</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Отзывы клиентов</a>
+              <a href="#reviews" class="footer__link">Отзывы клиентов</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Вся одежда</a>
+              <a href="#trends" class="footer__link">Вся одежда</a>
             </li>
           </ul>
         </div>
@@ -875,7 +885,7 @@
         <h3 class="modal-login__title">Войти в личный кабинет</h3>
         <form action="login.php" method="POST" class="form modal-login__form">
           <input type="email" class="modal-login__input" placeholder="E-mail*" name="email" />
-          <input type="text" class="modal-login__input" placeholder="Пароль*" name="password" />
+          <input type="password" class="modal-login__input" placeholder="Пароль*" name="password"/>
           <button class="modal-login__button">Войти</button>
           <span class="modal-login__info">* Обязательные поля</span>
         </form>
