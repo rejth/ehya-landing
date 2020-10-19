@@ -363,6 +363,8 @@
 @media ( max-width: 825px )
   #story-br
     display: none
+  #twentyper
+    display: block
   .container
     max-width: 682px
   .navbar-menu
@@ -469,7 +471,7 @@
       margin-top: 24px
       margin-bottom: 28px
   .horizontal-divider
-    width: 90%
+    width: 95%
   .stories
     padding-top: 80px
     padding-right: 23px
@@ -817,6 +819,7 @@
     padding: 381px 23px 36px 23px
     max-width: 320px
     min-height: 899px
+    border-radius: 0
     background-image: url('../sass/blocks/hero/img/hero-mobile.png')
     background-size: cover
     &__wrapper
@@ -906,6 +909,8 @@
     &__tabs-item
       font-size: 16px
       line-height: 22px
+    &__tabs-item + &__tabs-item
+      margin-left: 16px
     &__cards-wrapper--active
       margin: auto
       margin-top: 16px
@@ -995,7 +1000,7 @@
       max-width: 145px
   .horizontal-divider
     margin-top: 64px
-    width: 90%
+    width: 100%
   .stories
     padding-top: 48px
     padding-right: 0
@@ -1014,8 +1019,12 @@
       max-width: 280px
       font-size: 16px
       line-height: 28px
+    &__button
+      margin-top: 36px
+      width: 48px
+      height: 48px
   .stories-slider
-    margin-top: 36px
+    margin-top: 26px
     max-width: 280px
   .story
     flex-wrap: wrap
@@ -1085,10 +1094,11 @@
       grid-template-columns: 1fr
       grid-row-gap: 30px
     &__title
-      margin-bottom: 0
+      margin-bottom: 5px
       font-size: 16px
       line-height: 22px
     &__list
+      margin-left: 18px
       margin-right: 0
     &__item
       margin-top: 15px
