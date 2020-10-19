@@ -1,7 +1,7 @@
 @media ( max-width: 1200px )
   .container
-    max-width: 980px
-    // max-width: 90%
+    width: 980px
+    max-width: 95%
   .collection
     &__wrapper
       align-items: flex-start
@@ -13,6 +13,7 @@
       margin: auto
       margin-top: 8.5px
       width: 980px
+      max-width: 100%
   .see-more
     &__link
       margin: auto
@@ -55,7 +56,7 @@
     &__button:hover
       border: 2px solid #333
 
-@media ( max-width: 996px )
+@media ( max-width: 1030px )
   .container
     width: 768px
     max-width: 90%
@@ -191,6 +192,27 @@
   .newsletter
     margin-top: 80px
     padding: 72px 0 80px 0
+    &::before
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      content: ''
+      width: 547px
+      height: 400px
+      background-size: 547px 400px
+      background-image: url(../sass/blocks/newsletter/img/test.png)
+      transform: rotate(180deg)
+    &::after
+      position: absolute
+      top: 0
+      left: 0
+      bottom: 0
+      content: ''
+      width: 547px
+      height: 400px
+      background-size: 547px 400px
+      background-image: url(../sass/blocks/newsletter/img/test.png)
     &__wrapper
       flex-direction: column
     &__text-wrapper
@@ -199,6 +221,7 @@
     margin-top: 56px
     margin-right: 0
     margin-left: 0
+    z-index: 2
   .footer
     padding-top: 64px
     padding-bottom: 130px
@@ -511,6 +534,27 @@
   .newsletter
     margin-top: 80px
     padding: 72px 0 80px 0
+    &::before
+      position: absolute
+      top: 350px
+      right: 0
+      bottom: 0
+      content: ''
+      width: 547px
+      height: 338px
+      background-size: 547px 338px
+      background-image: url(../sass/blocks/newsletter/img/oval.png)
+      transform: rotate(360deg)
+    &::after
+      position: absolute
+      top: 0
+      left: -160px
+      bottom: 0
+      content: ''
+      width: 574px
+      height: 338px
+      background-size: 574px 338px
+      background-image: url(../sass/blocks/newsletter/img/test.png)
     &__wrapper
       flex-direction: column
     &__text-wrapper
@@ -531,6 +575,7 @@
       align-items: start
     &__list
       margin-right: 0
+      z-index: 1000
     &__info
       width: 253px
     &__summary-wrapper
@@ -749,6 +794,7 @@
     &__services
       grid-row: 2
       grid-column: 1
+      z-index: 1000
     &__company
       grid-row: 3
       grid-column: 1
@@ -1049,6 +1095,27 @@
   .newsletter
     margin-top: 64px
     padding: 64px 20px 64px 20px
+    &::before
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      content: ''
+      width: 0
+      height: 0
+      background-size: 0 0
+      background-image: url(../sass/blocks/newsletter/img/test.png)
+      transform: rotate(180deg)
+    &::after
+      position: absolute
+      top: 0
+      left: -160px
+      bottom: 0
+      content: ''
+      width: 474px
+      height: 338px
+      background-size: 474px 338px
+      background-image: url(../sass/blocks/newsletter/img/test.png)
     &__wrapper
       flex-direction: column
     &__text-wrapper
