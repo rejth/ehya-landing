@@ -191,4 +191,6 @@ $(document).ready(function () {
     var modalOverlay = $(".navbar-menu__list");
     modalOverlay.removeClass("navbar-menu__list--mobile-visible");
   };
+
+  AOS.init();
 });
