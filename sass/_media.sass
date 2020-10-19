@@ -56,7 +56,7 @@
     &__button:hover
       border: 2px solid #333
 
-@media ( max-width: 1030px )
+@media ( max-width: 1100px )
   .container
     width: 768px
     max-width: 90%
@@ -94,6 +94,7 @@
     &__wrapper
       flex-wrap: wrap
     &__woman
+      margin-right: 10px
       width: 350px
       height: 490px
     &__images-wrapper
@@ -136,9 +137,8 @@
   .see-more
     flex-grow: 1
     margin-left: 38px
-    margin-right: 269px
-  .reviews
-    margin-top: 80px
+    margin-right: auto
+    // margin-top: 80px
   .reviews-slider
     &__item
       max-width: 630px
@@ -265,7 +265,7 @@
     left: 0
     right: 0
     top: 0
-    z-index: 100
+    z-index: 99999
   .navbar-menu
     &__list
       position: fixed
@@ -381,7 +381,7 @@
   .see-more
     flex-grow: 1
     margin-left: 38px
-    margin-right: 258px
+    margin-right: auto
 
 @media ( max-width: 825px )
   #story-br
@@ -839,7 +839,7 @@
       height: 324px
       max-height: 100%
       top: 10px
-      z-index: 5000
+      z-index: 99999
       background-color: $light
     &__item + &__item
       margin-left: 0
