@@ -253,6 +253,7 @@
     &__dialog
       padding-left: 58px
       padding-right: 58px
+      z-index: 99999
 
 @media ( max-width: 855px )
   body
@@ -307,7 +308,7 @@
       display: flex
       padding: 0
       width: 22px
-      height: 13.3px
+      // height: 17.7px
       flex-direction: column
       align-items: center
       justify-content: space-between
@@ -318,6 +319,8 @@
       width: 22px
       height: 2.2px
       background-color: #3A4C66
+    &__mobile-button-line + &__mobile-button-line
+      margin-top: 5.5px
   .hero
     margin-top: 36px
     padding: 36px 0 36px 28px
@@ -403,7 +406,7 @@
       margin-right: 20px
       padding: 0
       width: 22px
-      height: 13.3px
+      height: 17.7px
       flex-direction: column
       align-items: center
       justify-content: space-between
@@ -607,7 +610,7 @@
       display: flex
       padding: 0
       width: 22px
-      height: 13.3px
+      height: 17.7px
       flex-direction: column
       align-items: center
       justify-content: space-between
@@ -806,6 +809,7 @@
     &__dialog
       padding-left: 58px
       padding-right: 58px
+      z-index: 99999
     // Window
     &__button
       margin-top: 15px
@@ -827,6 +831,7 @@
       padding: 18px 0
     &__logo
       margin-right: auto
+      margin-left: 5px
     &__list
       position: fixed
       display: none
@@ -863,6 +868,8 @@
     &__list--mobile-visible
       display: flex
       overflow-y: auto
+    &__mobile-button
+      margin-right: 5px
   .hero
     margin-top: 24px
     padding: 381px 23px 36px 23px
@@ -1085,6 +1092,7 @@
       margin-top: 24px
     &__image
       width: 270px
+      height: 277px
     &__text
       max-width: 270px
       transform: translate(5px,-15px)

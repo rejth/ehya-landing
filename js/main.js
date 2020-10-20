@@ -11,9 +11,6 @@ $(document).ready(function () {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true
-    },
-    mousewheel: {
-      invert: true
     }
   });
 
@@ -22,9 +19,6 @@ $(document).ready(function () {
     autoHeight: true,
     loop: true,
     slidesPerView: 1,
-    mousewheel: {
-      invert: true
-    },
     navigation: {
       nextEl: '.stories__button--next',
       prevEl: '.stories__button--prev'
@@ -165,6 +159,17 @@ $(document).ready(function () {
   });
 
 	$(".footer__navigation").on("click", "a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+		top = $(id).offset().top;
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 1500);
+  });
+
+	$(".up").on("click", function (event) {
 		//отменяем стандартную обработку нажатия по ссылке
 		event.preventDefault();
 		//забираем идентификатор бока с атрибута href
