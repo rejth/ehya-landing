@@ -17,7 +17,7 @@
 
 <body>
   <!-- Header -->
-  <header class="navbar-menu">
+  <header class="navbar-menu navbar-menu--mobile-fixed">
     <div class="container">
       <div class="navbar-menu__wrapper">
         <!-- Logo -->
@@ -205,6 +205,35 @@
   </footer>
   <!-- /.footer -->
 
+  <!-- Modal Order Window -->
+  <div id="buy-modal" class="modal">
+    <!-- Background color -->
+    <div class="modal__overlay"></div>
+    <!-- Window -->
+    <div class="modal__dialog">
+      <!-- Close button -->
+      <div class="modal__dialog-guts">
+        <a href="#" class="modal__close">
+          <img src="sass/blocks/modal/img/close.svg" alt="Image of close button" />
+        </a>
+        <!-- Window content -->
+        <h3 class="modal__title">Связаться с нами</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input type="text" class="modal__input" placeholder="ФИО*" name="name" />
+          <input type="tel" class="modal__input" placeholder="Номер телефона*" name="phone"
+            data-mask="+7 (000) 000-00-00" />
+          <input type="email" class="modal__input" placeholder="E-mail*" name="email" />
+          <textarea class="modal__message" placeholder="Message" name="message"></textarea>
+          <button class="modal__button">Отправить</button>
+          <span class="modal__info">* Обязательные поля</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog-guts -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+
   <!-- Modal Log in Window -->
   <div id="login-modal" class="modal-login">
     <!-- Background color -->
@@ -220,7 +249,7 @@
         <h3 class="modal-login__title">Войти в личный кабинет</h3>
         <form action="login.php" method="POST" class="form modal-login__form">
           <input type="email" class="modal-login__input" placeholder="E-mail*" name="email" />
-          <input type="password" class="modal-login__input" placeholder="Пароль*" name="password"/>
+          <input type="password" class="modal-login__input" placeholder="Пароль*" name="password" />
           <button class="modal-login__button">Войти</button>
           <span class="modal-login__info">* Обязательные поля</span>
         </form>
