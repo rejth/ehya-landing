@@ -8,8 +8,8 @@
 
 @font-face {
   font-family: 'HK Grotesk Medium';
-  src: url('../fonts/hkgrotesk-medium-web.woff') format('woff'),
-    url('../fonts//hkgrotesk-medium-web.woff2') format('woff2');
+  src: url('../fonts/hkgrotesk-regular-web.woff') format('woff'),
+    url('../fonts//hkgrotesk-regular-web.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
 }

@@ -1,21 +1,23 @@
 .navbar-menu
+  background-color: $light
   &__wrapper
     padding: 26px 0
     display: flex
     align-items: center
     justify-content: space-between
   &__logo
-    margin-right: 393px
+    margin-right: auto
   &__list
     margin: 0
     padding: 0
     display: flex
-    max-width: 506px
     align-items: center
     justify-content: space-between
     list-style-type: none
   &__item + &__item
     margin-left: 40px
+  &__close-dropdown
+    display: none
   &__link
     font-style: normal
     font-weight: 600
@@ -25,7 +27,7 @@
     color: $primary-text-color
     text-decoration: none
   &__button
-    margin-left: 50px
+    margin-left: 10px
     padding: 13px 24px
     min-width: 101px
     min-height: 48px
