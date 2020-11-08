@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // Review slider
+  // Create Review slider
   let reviewSlider = new Swiper('.reviews-slider', {
     autoHeight: true,
     loop: true,
@@ -14,7 +14,7 @@ $(document).ready(function () {
     }
   });
 
-  // Stories slider
+  // Create Stories slider
   let storiesSlider = new Swiper('.stories-slider', {
     autoHeight: true,
     loop: true,
@@ -25,7 +25,7 @@ $(document).ready(function () {
     }
   });
 
-  // Trends section tabs
+  // Create Trends section tabs
   let tabsItem = $(".trends__tabs-item");
   let contentItem = $(".trends__cards-wrapper");
   tabsItem.on("click", function (e) {
@@ -36,6 +36,7 @@ $(document).ready(function () {
     $(this).addClass("trends__tabs-item--active");
   });
 
+  // Create inline svg
   $('img.img-svg').each(function(){
     var $img = $(this);
     var imgClass = $img.attr('class');
@@ -53,7 +54,7 @@ $(document).ready(function () {
     }, 'xml');
   });
 
-  // Stories section buttons
+  // Create Stories section buttons
   let storyButton = $(".stories__button");
   let arrowSvg = $(".img-svg");
   storyButton.on("click", function(e) {
@@ -64,12 +65,13 @@ $(document).ready(function () {
     $(this).addClass("stories__button--active");
   });
 
-  // Modal window
+  // Create Order Modal window
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModalWindow);
   closeModalButton.on("click", closeModalWindow);
 
+  // Open Order Modal window by clicking button
   function openModalWindow() {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
@@ -77,7 +79,7 @@ $(document).ready(function () {
     modalDialog.addClass("modal__dialog--visible");
   };
 
-  // Close by clicking button
+  // Close Order Modal window by clicking button
   function closeModalWindow(event) {
     event.preventDefault()
     var modalOverlay = $(".modal__overlay");
@@ -86,12 +88,13 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible");
   };
 
-  // Modal Login window
+  // Create Login Modal window
   var modalLoginButton = $("[data-toggle=modal-login]");
   var closeModalLoginButton = $(".modal-login__close");
   modalLoginButton.on("click", openModalLoginWindow);
   closeModalLoginButton.on("click", closeModalLoginWindow);
 
+  // Open Login Modal window by clicking button
   function openModalLoginWindow() {
     var modalLoginOverlay = $(".modal-login__overlay");
     var modalLoginDialog = $(".modal-login__dialog");
@@ -99,7 +102,7 @@ $(document).ready(function () {
     modalLoginDialog.addClass("modal-login__dialog--visible");
   };
 
-  // Close by clicking button
+  // Close Login Modal window by clicking button
   function closeModalLoginWindow(event) {
     event.preventDefault()
     var modalLoginOverlay= $(".modal-login__overlay");
@@ -147,40 +150,43 @@ $(document).ready(function () {
     });
   });
 
-	$(".navbar-menu__list").on("click", "a", function (event) {
-		//отменяем стандартную обработку нажатия по ссылке
-		event.preventDefault();
-		//забираем идентификатор бока с атрибута href
-		var id  = $(this).attr('href'),
-		//узнаем высоту от начала страницы до блока на который ссылается якорь
-		top = $(id).offset().top;
-		//анимируем переход на расстояние - top за 1500 мс
-		$('body,html').animate({scrollTop: top}, 1500);
-  });
+// Create smooth scrolling from header
+$(".navbar-menu__list").on("click", "a", function (event) {
+  //отменяем стандартную обработку нажатия по ссылке
+  event.preventDefault();
+  //забираем идентификатор бока с атрибута href
+  var id  = $(this).attr('href'),
+  //узнаем высоту от начала страницы до блока на который ссылается якорь
+  top = $(id).offset().top;
+  //анимируем переход на расстояние - top за 1500 мс
+  $('body,html').animate({scrollTop: top}, 1500);
+});
 
-	$(".footer__navigation").on("click", "a", function (event) {
-		//отменяем стандартную обработку нажатия по ссылке
-		event.preventDefault();
-		//забираем идентификатор бока с атрибута href
-		var id  = $(this).attr('href'),
-		//узнаем высоту от начала страницы до блока на который ссылается якорь
-		top = $(id).offset().top;
-		//анимируем переход на расстояние - top за 1500 мс
-		$('body,html').animate({scrollTop: top}, 1500);
-  });
+// Create smooth scrolling from footer
+$(".footer__navigation").on("click", "a", function (event) {
+  //отменяем стандартную обработку нажатия по ссылке
+  event.preventDefault();
+  //забираем идентификатор бока с атрибута href
+  var id  = $(this).attr('href'),
+  //узнаем высоту от начала страницы до блока на который ссылается якорь
+  top = $(id).offset().top;
+  //анимируем переход на расстояние - top за 1500 мс
+  $('body,html').animate({scrollTop: top}, 1500);
+});
 
-	$(".up").on("click", function (event) {
-		//отменяем стандартную обработку нажатия по ссылке
-		event.preventDefault();
-		//забираем идентификатор бока с атрибута href
-		var id  = $(this).attr('href'),
-		//узнаем высоту от начала страницы до блока на который ссылается якорь
-		top = $(id).offset().top;
-		//анимируем переход на расстояние - top за 1500 мс
-		$('body,html').animate({scrollTop: top}, 1500);
-  });
+// Create smooth scrolling for return button
+$(".up").on("click", function (event) {
+  //отменяем стандартную обработку нажатия по ссылке
+  event.preventDefault();
+  //забираем идентификатор бока с атрибута href
+  var id  = $(this).attr('href'),
+  //узнаем высоту от начала страницы до блока на который ссылается якорь
+  top = $(id).offset().top;
+  //анимируем переход на расстояние - top за 1500 мс
+  $('body,html').animate({scrollTop: top}, 1500);
+});
 
-  // Menu Button
+  // Create DropDown Menu Button
   var menuButton = document.querySelector(".navbar-menu__mobile-button")
   menuButton.addEventListener("click", function () {
     document
@@ -197,5 +203,6 @@ $(document).ready(function () {
     modalOverlay.removeClass("navbar-menu__list--mobile-visible");
   };
 
+  // AOS animation initialization
   AOS.init();
 });
