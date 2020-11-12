@@ -2,10 +2,7 @@
 https://ilyakirsanov.ru/ehya-market/
 
 **Ehya Market landing page**  
-Дипломный проект курса Веб Старт от Glo Academy. Автор курса — Артем Исламов.
-
-**Проект выполняет:**  
-Илья Кирсанов. Десятый поток курса Веб Старт.
+Дипломный проект курса
 
 **Технологии:** 
 1) HTML/CSS/JavaScript, Flexbox Layout, CSS Grid Layout, JQuery 
