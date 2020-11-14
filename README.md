@@ -2,7 +2,7 @@
 https://ilyakirsanov.ru/ehya-market/
 
 **Ehya Market landing page**  
-Дипломный проект курса
+Дипломный проект для практики верстки
 
 **Технологии:** 
 1) HTML/CSS/JavaScript, Flexbox Layout, CSS Grid Layout, JQuery 
